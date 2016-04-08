@@ -1,0 +1,95 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+/* === Header === */
+.head {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute; }
+
+/* === navegacion === */
+/* === identidad === */
+.efecto {
+	background: white;
+	max-height: 350px; }
+.efecto img {
+	opacity: 0.25;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease; }
+.efecto:hover img {
+	opacity: 1; }
+.efecto .caption {
+	width: 50%;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0);
+	position: relative;
+	bottom: 215px;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease; }
+.efecto:hover .caption {
+	background: rgba(255, 255, 255, 0.75); }
+.efecto .caption h4, .efecto .caption p {
+	position: relative;
+	color: #222222; }
+/* === productos === */
+/* === proyectos === */
+.efecto2 .caption2 {
+	opacity: 0;
+	position: relative;
+	padding: 1rem;
+	background-color: white;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease; }
+.efecto2:hover .caption2 {
+	opacity: 1;
+	margin-top: -100px;
+	margin-bottom: 100px; }
+/* === testimonios === */
+/* === footer === */
+.footer {
+	background-image: url("../img/img_003.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; }
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 780px) {
+
+
+
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 400px) {
+
+
+
+}
+
+ /*========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+
+}
