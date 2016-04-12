@@ -8,8 +8,12 @@
 	padding-bottom: 1rem;
 	background: rgba(255, 255, 255, 0.5);
 	position: absolute; }
-
 /* === navegacion === */
+.navegacion .top-bar .menu a {
+	color: #666666;
+	font-weight: bold; }
+.navegacion .top-bar .top-bar-right img {
+	opacity: 0; }
 /* === identidad === */
 .efecto {
 	background: white;
@@ -38,6 +42,16 @@
 	position: relative;
 	color: #222222; }
 /* === productos === */
+.productos {
+	background-image: url("../img/img2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 4rem; }
+.productos h3, .productos p, .productos img, .productos a.button {
+	margin-top: 4rem;
+	color: white; }
+.productos hr {
+	border-bottom: 1px solid #cccccc; }
 /* === proyectos === */
 .efecto2 .caption2 {
 	opacity: 0;
@@ -53,43 +67,50 @@
 	margin-top: -100px;
 	margin-bottom: 100px; }
 /* === testimonios === */
+.testimonios, .testimonios.orbit {
+	background-color: #006bb1; }
+.testimonios h3, .testimonios blockquote, .testimonios cite, .testimonios p {
+	color: white; }
+.testimonios h3, .testimonios img {
+	margin-top: 3rem; }
+.testimonios .orbit-bullets {
+	padding: 2.5rem;
+	margin-bottom: 0; }
 /* === footer === */
 .footer {
-	background-image: url("../img/img_003.jpg");
+	background-image: url("../img/img3.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%; }
-
-
+.footer .logo {
+	margin-top: 4rem;
+	margin-bottom: 4rem; }
+.footer p, .footer .menu {
+	margin-bottom: 5rem; }
+.footer h4, .footer p {
+	color: #333333; }
+.footer .menu a {
+	color: #555555; }
+.footer .menu.social {
+	font-size: 2.5rem; }
+.footer .menu.social a {
+	padding-bottom: 0;
+	padding-top: 0; }
+/* === disclaimer */
+.disclaimer {
+	background-color: #f1f1f1; }
+.disclaimer p {
+	font-size: 0.75rem;
+	padding-top: 1rem;
+	color: #666666; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-
-@media handheld, only screen and (max-width: 780px) {
-
-
-
-}
-
+@media handheld, only screen and (max-width: 780px) {}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-
-@media handheld, only screen and (max-width: 400px) {
-
-
-
-}
-
- /*========================================== */
+@media handheld, only screen and (max-width: 400px) {}
+/* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
-
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {}
