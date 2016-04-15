@@ -1,0 +1,60 @@
+ALTILLOS.CL
+User:	admin
+Clave:	Altillos.Remedi.#506-NBS.E25
+
+ANOP.CL
+User:	admin
+Clave:	An@p.Chile#2015.506-DCG#$503
+
+APUNTO.CL
+User:	admin
+Clave:	Apunto.w$b?.#506-G6M.8E!
+
+CAJASELECTRICAS.CL
+User:	admin
+Clave:	C@jasElectr!ca.Remedi.#506-VXM.KU?
+
+FERIABAZARELLA.CL
+User:	admin
+Clave:	Feri@.Bazare!!@.%#506-LK?+(LPY8)-W
+
+ILIA.CL
+User:	admin
+Clave:	ili@.consultores.506-2k5b6c
+
+LOCKERMETALICOS.CL
+User:	admin
+Clave:	Locker!#M@talicos.Remedi.#506-LVR%414
+
+PAGINASWEBPRO.CL
+User:	admin
+Clave:	P@ginas.web-pro.506-L7UGNW
+
+PRIMESERVICESIT.COM
+User:	admin
+Clave:	Pr!me.$erv!ces.IT.%#506-UK?+(LP+/Y8)-M
+
+
+REMEDISTTAMER.CL
+User:	admin
+Clave:	Rem#ed!.Stt@mer.#506-TK?+(ZAB8)-k
+
+VALUEADD.CL
+User:	admin
+Clave:	V@!ue.Add.#506-JK?+(TEF1)-P
+
+
+SUBCONTRATACIONCHILE.CL
+User:	admin
+Clave:	!lia.subcontr@ta.?$b?.#506-Chi!e.8E!
+
+yerbamatedam.cl
+user: admin
+pass: yerbamatedam2392.506
+
+cpanel ilia
+url: https://gator3242.hostgator.com:2083/
+user: ilia
+SEO: +s^x0Te9~aN#
+Services: 3PyoI!]uHl0P
+
