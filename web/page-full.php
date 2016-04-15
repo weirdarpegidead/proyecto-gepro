@@ -4,7 +4,7 @@
     */
     ?>
     <?php get_header(); ?>
-    <!-- contenido -->
+    <!-- contenido page-full -->
     <div class="row">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="large-12 columns">

@@ -4,7 +4,7 @@
     */
     ?>
     <?php get_header(); ?>
-    <!-- contenido -->
+    <!-- contenido mineria -->
     <div class="row">
       <?php query_posts('category_name=productos' ); while ( have_posts() ) : the_post(); ?>
       <div class="large-4 columns text-center">
