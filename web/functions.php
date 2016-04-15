@@ -3,7 +3,9 @@
 /*=== Soporte para thumbnail ==*/
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'homepage-thumb', 0, 0, true );
-add_image_size( 'testimonios', 150, 50, true);
+add_image_size( 'testimonios', 200, 200, true);
+add_image_size( 'blog', 400, 400, true);
+add_image_size( 'single', 600, 600, true);
 
 /*=== sacar barra de admin ==*/
 add_filter( 'show_admin_bar', '__return_false' );

@@ -110,7 +110,7 @@
         </a>
       </div>
       <div class="large-3 columns text-center efecto2">
-        <a href="#">
+        <a href="<?php echo get_site_url(); ?>/industria">
           <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
           <div class="caption2">
             <h4>Industria</h4>
@@ -119,7 +119,7 @@
         </a>
       </div>
       <div class="large-3 columns text-center efecto2">
-        <a href="#">
+        <a href="<?php echo get_site_url(); ?>/construccion">
           <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
           <div class="caption2">
             <h4>Construcción</h4>
@@ -128,7 +128,7 @@
         </a>
       </div>
       <div class="large-3 columns text-center efecto2">
-        <a href="#">
+        <a href="<?php echo get_site_url(); ?>/ingenieria">
           <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
           <div class="caption2">
             <h4>Ingeniería</h4>

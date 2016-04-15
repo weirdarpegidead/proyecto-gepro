@@ -20,7 +20,7 @@
     <!-- header -->
     <div class="expanded row collapse">
       <div class="large-12 columns text-center head">
-        <img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
+        <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
       </div>
       <div class="large-12 columns">
         <div>
@@ -34,14 +34,16 @@
         <div class="top-bar">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></li>
+              <li class="menu-text">
+                <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+              </li>
             </ul>
           </div>
           <div class="top-bar-right">
             <?php wp_nav_menu(
               array(
               'container' => false,
-              'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu><li class="menu-text"><img src="http://placehold.it/150x50"></li>%3$s</ul>',
+              'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu><li class="menu-text"><img src="http://placehold.it/205x74"></li>%3$s</ul>',
               'theme_location' => 'menu_principal'
               )); ?>
           </div>

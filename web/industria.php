@@ -1,10 +1,10 @@
     <?php
     /*
-    Template Name: mineria
+    Template Name: industria
     */
     ?>
     <?php get_header(); ?>
-    <!-- contenido mineria -->
+    <!-- contenido industria -->
     <div class="row contenido" data-equalizer>
       <?php query_posts('category_name=productos' ); while ( have_posts() ) : the_post(); ?>
       <div class="large-4 columns text-center mascara" data-equalizer-watch>
