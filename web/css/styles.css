@@ -7,7 +7,8 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background: rgba(255, 255, 255, 0.5);
-	position: absolute; }
+	position: absolute;
+	z-index: 1; }
 /* === navegacion === */
 .navegacion .top-bar .menu a {
 	color: #666666;
@@ -46,13 +47,35 @@
 /* === productos === */
 .productos {
 	background-image: url("../img/img2.jpg");
-	background-repeat: no-repeat;
+	background-repeat: cover;
 	background-size: 100%;
 	padding-bottom: 4rem; }
 .productos h3, .productos p, .productos img, .productos a.button {
 	margin-top: 4rem;
 	color: white; }
 .productos hr {
+	border-bottom: 1px solid #cccccc; }
+/* === servicios === */
+.servicios {
+	background-image: url("../img/img2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 4rem;
+	padding-top: 4rem; }
+.servicios h3, .servicios p, .servicios img, .servicios a.button {
+	color: white; }
+.servicios hr {
+	border-bottom: 1px solid #cccccc; }
+/* === noticias === */
+.noticias {
+	background-image: url("../img/img2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 4rem;
+	padding-top: 4rem; }
+.noticias h3, .noticias p, .noticias img, .noticias a.button {
+	color: white; }
+.noticias hr {
 	border-bottom: 1px solid #cccccc; }
 /* === proyectos === */
 .efecto2 .caption2 {

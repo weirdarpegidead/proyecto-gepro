@@ -35,8 +35,8 @@
       </div>
       <?php endwhile; wp_reset_query(); ?>
     </div>
-
-    <div id="panel2" class="expanded row productos hide">
+    <!-- servicios -->
+    <div id="panel2" class="expanded row servicios hide">
       <div class="large-3 columns text-center">
         <h3>Servicio 1</h3>
         <hr>
@@ -66,8 +66,8 @@
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
     </div>
-
-    <div id="panel3" class="expanded row productos hide">
+    <!-- noticias -->
+    <div id="panel3" class="expanded row noticias hide">
       <div class="large-3 columns text-center">
         <h3>Noticia 1</h3>
         <hr>
@@ -97,7 +97,6 @@
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
     </div>
-
     <!-- proyectos -->
     <div class="expanded row collapse">
       <div class="large-3 columns text-center efecto2">

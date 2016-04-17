@@ -3,17 +3,15 @@
       <div class="large-10 large-offset-2 columns logo">
         <img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
       </div>
-      <div class="large-4 large-offset-2 columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('texto-footer') ) : endif; ?>
       <div class="large-2 columns">
         <h4>Navegación</h4>
-        <ul class="menu vertical">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACTO</a></li>
-        </ul>
+        <?php wp_nav_menu(
+          array(
+          'container' => false,
+          'items_wrap' => '<ul class="menu vertical">%3$s</ul>',
+          'theme_location' => 'menu_footer'
+        )); ?>
       </div>
       <div class="large-2 columns end">
         <h4>Síguenos</h4>
@@ -28,9 +26,7 @@
     </div>
     <!-- disclaimer -->
     <div class="expanded row collapse disclaimer">
-      <div class="large-12 columns text-center">
-        <p>Diseño y Desarrollo Web <a href="#">Ilia Consultores, Ingenieria y Capacitacion</a></p>
-      </div>
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('disclaimer') ) : endif; ?>
     </div>
     <!-- formulario -->
     <div class="container-fluid visible invisible2" id="formulario">
