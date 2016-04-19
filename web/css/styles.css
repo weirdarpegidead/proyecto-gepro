@@ -16,6 +16,10 @@
 	text-transform: uppercase; }
 .navegacion .top-bar .top-bar-right img {
 	opacity: 0; }
+/* === slide === */
+.slide .orbit-container {
+	height: auto !important;
+	overflow: visible; }
 /* === identidad === */
 .efecto {
 	background: white;

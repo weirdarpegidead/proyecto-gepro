@@ -28,7 +28,7 @@
           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
           <?php query_posts('category_name=slide&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
           <li class="orbit-slide text-center">
-            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slide' ); } ?>
+            <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
           </li>
           <?php endwhile; wp_reset_query(); ?>
         </ul>

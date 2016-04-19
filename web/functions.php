@@ -9,7 +9,7 @@ add_image_size( 'single', 600, 600, true);
 add_filter( 'show_admin_bar', '__return_false' );
 /* === menus === */
 register_nav_menus ( array(
-    'menu_principal' => 'menu_header'
+    'menu_principal' => 'menu_header',
     'menu_footer' => 'menu_inferior'
     ));
 /* === agrego una extencion para el excerpt personalizada ===
