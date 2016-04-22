@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- header -->
-    <div class="expanded row collapse">
+    <div class="expanded row collapse slide">
       <div class="large-12 columns text-center head">
         <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
       </div>
@@ -47,15 +47,21 @@
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">
-                <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+                <a href="<?php echo site_url(); ?>" style="padding:0;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
               </li>
+              <?php if ( is_user_logged_in() ) { ?>
+              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
+              <?php }  else { ?>
+              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Ingreso</a></li>
+              <?php } ?>
             </ul>
           </div>
           <div class="top-bar-right">
             <?php wp_nav_menu(
               array(
               'container' => false,
-              'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu><li class="menu-text"><img src="http://placehold.it/205x74"></li>%3$s</ul>',
+              'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu><li class="menu-text"><img src="http://placehold.it/205x52"></li>%3$s</ul>',
               'theme_location' => 'menu_principal'
               )); ?>
           </div>

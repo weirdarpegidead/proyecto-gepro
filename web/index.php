@@ -29,73 +29,35 @@
       <div class="large-3 columns text-center">
         <h3><?php the_title(); ?></h3>
         <hr>
-        <img src="http://placehold.it/150x150">
-        <?php my_excerpt(55); ?>
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
+        <?php my_excerpt(40); ?>
         <a href="<?php echo get_permalink(); ?>" class="button warning radius">LEER MÁS</a>
       </div>
       <?php endwhile; wp_reset_query(); ?>
     </div>
     <!-- servicios -->
     <div id="panel2" class="expanded row servicios hide">
-      <div class="large-3 columns text-center">
-        <h3>Servicio 1</h3>
+      <?php query_posts('category_name=productos&posts_per_page=8' ); while ( have_posts() ) : the_post(); ?>
+      <div class="large-4 columns text-center mascara">
+        <h3><?php the_title(); ?></h3>
         <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
+        <?php my_excerpt(40); ?>
+        <a href="<?php echo get_permalink(); ?>" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
-        <h3>Servicio 2</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
-      <div class="large-3 columns text-center">
-        <h3>Servicio 3</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
-      <div class="large-3 columns text-center">
-        <h3>Servicio 4</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
+      <?php endwhile; wp_reset_query(); ?>
     </div>
     <!-- noticias -->
     <div id="panel3" class="expanded row noticias hide">
-      <div class="large-3 columns text-center">
-        <h3>Noticia 1</h3>
+      <?php query_posts('category_name=productos&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
+      <div class="large-3 columns text-center mascara">
+        <h3><?php the_title(); ?></h3>
         <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
+        <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
+        <?php my_excerpt(40); ?>
+        <a href="<?php echo get_permalink(); ?>" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
-        <h3>Noticia 2</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
-      <div class="large-3 columns text-center">
-        <h3>Noticia 3</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
-      <div class="large-3 columns text-center">
-        <h3>Noticia 4</h3>
-        <hr>
-        <img src="http://placehold.it/150x150">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button warning radius">LEER MÁS</a>
-      </div>
+      <?php endwhile; wp_reset_query(); ?>
     </div>
     <!-- proyectos -->
     <div class="expanded row collapse">

@@ -20,6 +20,8 @@
 .slide .orbit-container {
 	height: auto !important;
 	overflow: visible; }
+.slide .orbit-container li {
+	max-height: none !important; }
 /* === identidad === */
 .efecto {
 	background: white;
@@ -51,8 +53,8 @@
 /* === productos === */
 .productos {
 	background-image: url("../img/img2.jpg");
-	background-repeat: cover;
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding-bottom: 4rem; }
 .productos h3, .productos p, .productos img, .productos a.button {
 	margin-top: 4rem;
@@ -181,6 +183,19 @@
 	-webkit-border-radius: 400px !important;
 	-khtml-border-radius: 400px !important;
 	overflow: hidden; }
+/* === seccion privada === */
+
+/* === clases wordpress === */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; }
+.alignright {
+	float: right !important; }
+.alignleft {
+	float: left !important; }
+.alignjustify {
+	text-align: justify; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
