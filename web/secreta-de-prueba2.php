@@ -40,9 +40,60 @@
           </div>
         </div>
       </div>
-      <div class="large-3 columns">
-        <h1>Titulo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="large-3 columns sidebar">
+        <div class="row">
+
+          <div class="large-12 columns">
+            <div class="callout secondary text-center">
+              <h5>Proximos eventos</h5>
+              <p>calendario de actividades</p>
+            </div>
+          </div>
+
+          <div class="large-12 columns">
+            <div class="callout primary">
+              <div class="row">
+                <div class="large-3 columns text-center">
+                  <h5>30 Abr</h5>
+                </div>
+                <div class="large-9 columns">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#">Detalles</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="large-12 columns">
+            <div class="callout primary">
+              <div class="row">
+                <div class="large-3 columns text-center">
+                  <h5>30 Abr</h5>
+                </div>
+                <div class="large-9 columns">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-12 columns">
+            <div class="callout primary">
+              <div class="row">
+                <div class="large-3 columns text-center">
+                  <h5>30 Abr</h5>
+                </div>
+                <div class="large-9 columns">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
     <?php } else { ?>

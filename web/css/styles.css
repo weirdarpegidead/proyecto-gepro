@@ -184,7 +184,12 @@
 	-khtml-border-radius: 400px !important;
 	overflow: hidden; }
 /* === seccion privada === */
-
+.sidebar .callout {
+	margin-bottom: 0; }
+.sidebar .callout p {
+	font-size: 0.8rem; }
+.sidebar .callout a {
+	font-size: 0.8rem; }
 /* === clases wordpress === */
 .aligncenter {
 	display: block;
