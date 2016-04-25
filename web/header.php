@@ -18,6 +18,9 @@
   </head>
   <body>
     <!-- header -->
+    <?php if ( is_page( 'eventos-y-actividades-2', 'descarga-de-archivos-internos' ) ) { ?>
+    <!-- sin nada -->
+    <?php } else { ?>
     <div class="expanded row collapse slide">
       <div class="large-12 columns text-center head">
         <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
@@ -39,7 +42,7 @@
           <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
         </nav>
       </div>
-    </div>
+    </div><?php } ?>
     <!-- navegacion -->
     <div class="expanded row collapse navegacion" data-sticky-container>
       <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">
@@ -52,8 +55,9 @@
               <?php if ( is_user_logged_in() ) { ?>
               <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
               <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/eventos-y-actividades-2/">Link 3</a></li>
               <?php }  else { ?>
-              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Ingreso</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Iniciar Sesión</a></li>
               <?php } ?>
             </ul>
           </div>
