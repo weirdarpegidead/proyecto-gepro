@@ -56,8 +56,10 @@
               <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
               <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
               <li><a href="http://desarrollo.ilia.cl/gepro/eventos-y-actividades-2/">Link 3</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/pagina-de-prueba/">Link 4</a></li>
               <?php }  else { ?>
               <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Iniciar Sesión</a></li>
+
               <?php } ?>
             </ul>
           </div>
