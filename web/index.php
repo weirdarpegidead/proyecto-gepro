@@ -37,9 +37,9 @@
     </div>
     <!-- servicios -->
     <div id="panel2" class="expanded row servicios hide">
-      <?php query_posts('category_name=productos&posts_per_page=8' ); while ( have_posts() ) : the_post(); ?>
-      <div class="large-4 columns text-center mascara">
-        <h3><?php the_title(); ?></h3>
+      <?php query_posts('category_name=servicios&posts_per_page=6' ); while ( have_posts() ) : the_post(); ?>
+      <div class="large-4 columns text-center">
+        <h4><?php the_title(); ?></h4>
         <hr>
         <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
         <?php my_excerpt(40); ?>

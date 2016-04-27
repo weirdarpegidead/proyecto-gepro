@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- header -->
-    <?php if ( is_page( 'eventos-y-actividades-2', 'descarga-de-archivos-internos' ) ) { ?>
+    <?php if ( is_page( array( 'prueba', 'descarga-de-archivos-internos', 'eventos-y-actividades-2', 'pagina-de-prueba' ) ) ) { ?>
     <!-- sin nada -->
     <?php } else { ?>
     <div class="expanded row collapse slide">
@@ -42,7 +42,8 @@
           <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
         </nav>
       </div>
-    </div><?php } ?>
+    </div>
+    <?php } ?>
     <!-- navegacion -->
     <div class="expanded row collapse navegacion" data-sticky-container>
       <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">

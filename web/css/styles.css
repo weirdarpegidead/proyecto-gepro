@@ -63,13 +63,13 @@
 	border-bottom: 1px solid #cccccc; }
 /* === servicios === */
 .servicios {
-	background-image: url("../img/img2.jpg");
+	background-image: url("../img/img5.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 4rem;
 	padding-top: 4rem; }
-.servicios h3, .servicios p, .servicios img, .servicios a.button {
-	color: white; }
+.servicios h4, .servicios p, .servicios img, .servicios a.button {
+	color: #333333; }
 .servicios hr {
 	border-bottom: 1px solid #cccccc; }
 /* === noticias === */
