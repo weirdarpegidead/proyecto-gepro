@@ -18,9 +18,8 @@
   </head>
   <body>
     <!-- header -->
-    <?php if ( is_page( array( 'prueba', 'descarga-de-archivos-internos', 'eventos-y-actividades-2', 'pagina-de-prueba' ) ) ) { ?>
-    <!-- sin nada -->
-    <?php } else { ?>
+    <?php// if ( is_page( array( 'prueba', 'descarga-de-archivos-internos', 'eventos-y-actividades-2', 'pagina-de-prueba' ) ) ) { ?>
+    <?php if ( is_home( ) ) { ?>
     <div class="expanded row collapse slide">
       <div class="large-12 columns text-center head">
         <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
@@ -43,25 +42,42 @@
         </nav>
       </div>
     </div>
+    
+    <?php } else { ?>
+    <!-- sin nada -->
     <?php } ?>
     <!-- navegacion -->
     <div class="expanded row collapse navegacion" data-sticky-container>
       <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">
+        <?php if ( is_user_logged_in() ) { ?>
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">
+                <a href="<?php echo site_url(); ?>" style="padding:0;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text"><img src="http://placehold.it/205x52"></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/eventos-y-actividades-2/">Link 3</a></li>
+              <li><a href="http://desarrollo.ilia.cl/gepro/pagina-de-prueba/">Link 4</a></li>
+              <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+        <?php }  else { ?>
         <div class="top-bar">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">
                 <a href="<?php echo site_url(); ?>" style="padding:0;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
               </li>
-              <?php if ( is_user_logged_in() ) { ?>
-              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
-              <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
-              <li><a href="http://desarrollo.ilia.cl/gepro/eventos-y-actividades-2/">Link 3</a></li>
-              <li><a href="http://desarrollo.ilia.cl/gepro/pagina-de-prueba/">Link 4</a></li>
-              <?php }  else { ?>
-              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Iniciar Sesión</a></li>
-
-              <?php } ?>
+              <li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Ingresar</a></li>
             </ul>
           </div>
           <div class="top-bar-right">
@@ -73,5 +89,6 @@
               )); ?>
           </div>
         </div>
+        <?php } ?>
       </div>
     </div>

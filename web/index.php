@@ -25,8 +25,8 @@
     </div>
     <!-- productos -->
     <div id="panel1" class="expanded row productos">
-      <?php query_posts('category_name=productos, blog&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
-      <div class="large-3 columns text-center">
+      <?php query_posts('category_name=identidad&posts_per_page=3' ); while ( have_posts() ) : the_post(); ?>
+      <div class="large-4 columns text-center">
         <h3><?php the_title(); ?></h3>
         <hr>
         <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
@@ -61,65 +61,49 @@
     </div>
     <!-- proyectos -->
     <div class="expanded row collapse">
+      <?php query_posts('category_name=areas&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
       <div class="large-3 columns text-center efecto2">
-        <a href="<?php echo get_site_url(); ?>/mineria">
-          <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
+        <a href="<?php echo get_permalink(); ?>">
+          <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?>
           <div class="caption2">
-            <h4>Mineria</h4>
-            <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h4><?php the_title(); ?></h4>
+            <?php my_excerpt(40); ?>
           </div>
         </a>
       </div>
-      <div class="large-3 columns text-center efecto2">
-        <a href="<?php echo get_site_url(); ?>/industria">
-          <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
-          <div class="caption2">
-            <h4>Industria</h4>
-            <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </a>
-      </div>
-      <div class="large-3 columns text-center efecto2">
-        <a href="<?php echo get_site_url(); ?>/construccion">
-          <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
-          <div class="caption2">
-            <h4>Construcción</h4>
-            <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </a>
-      </div>
-      <div class="large-3 columns text-center efecto2">
-        <a href="<?php echo get_site_url(); ?>/ingenieria">
-          <img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg">
-          <div class="caption2">
-            <h4>Ingeniería</h4>
-            <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </a>
-      </div>
+      <?php endwhile; wp_reset_query(); ?>
     </div>
     <!-- testimonios -->
     <div class="expanded row collapse testimonios">
       <h3 class="text-center">Nuestros clientes nos aman</h3>
     </div>
     <div class="testimonios orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <!--<nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span>First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span>Second slide details.</span></button>
+        <button data-slide="2"><span>Second slide details.</span></button>
+        <button data-slide="3"><span>Second slide details.</span></button>
+      </nav>-->
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+          <span><img src="http://placehold.it/150x50"></span>
+          <span class="current"><img src="http://placehold.it/150x50"></span>
+        </button>
+        <button data-slide="1"><span><img src="http://placehold.it/150x50"></span></button>
+        <button data-slide="2"><span><img src="http://placehold.it/150x50"></span></button>
+        <button data-slide="3"><span><img src="http://placehold.it/150x50"></span></button>
+      </nav>
       <ul class="orbit-container">
         <!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
         <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
         <?php query_posts('category_name=testimonios, blog&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
         <li class="orbit-slide text-center">
           <div>
-            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
+            <?php// if ( has_post_thumbnail() ) { the_post_thumbnail( 'testimonios' ); } ?>
             <blockquote class="text-center"><?php the_content(); ?><cite><?php the_title(); ?></cite></blockquote>
           </div>
         </li>
         <?php endwhile; wp_reset_query(); ?>
       </ul>
-      <nav class="orbit-bullets">
-        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-        <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
-        <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-      </nav>
     </div>
     <?php get_footer(); ?>

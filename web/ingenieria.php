@@ -5,6 +5,18 @@
     ?>
     <?php get_header(); ?>
     <!-- contenido ingenieria -->
+    <div class="row sub-navegacion">
+      <div class="large-12 columns">
+        <div class="menu-centered">
+          <ul class="menu">
+            <li><a href="http://desarrollo.ilia.cl/gepro/mineria/">Mineria</a></li>
+            <li><a href="http://desarrollo.ilia.cl/gepro/industria/">Industria</a></li>
+            <li><a href="http://desarrollo.ilia.cl/gepro/construccion/">Construccion</a></li>
+            <li class="current-menu-item"><a href="http://desarrollo.ilia.cl/gepro/ingenieria/">Ingenieria</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="row contenido" data-equalizer>
       <?php query_posts('category_name=productos' ); while ( have_posts() ) : the_post(); ?>
       <div class="large-4 columns text-center mascara" data-equalizer-watch>

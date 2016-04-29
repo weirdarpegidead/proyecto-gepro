@@ -2095,6 +2095,79 @@ select {
     color: #fefefe;
     background: #2199e8; }
 
+.sub-menu {
+  margin: 0;
+  list-style-type: none; }
+  .sub-menu > li {
+    display: table-cell;
+    vertical-align: middle; }
+    [data-whatinput='mouse'] .sub-menu > li {
+      outline: 0; }
+  .sub-menu > li > a {
+    display: block;
+    padding: 0.7rem 1rem;
+    line-height: 1; }
+  .sub-menu input,
+  .sub-menu a,
+  .sub-menu button {
+    margin-bottom: 0; }
+  .sub-menu > li > a img,
+  .sub-menu > li > a i {
+    vertical-align: middle; }
+  .sub-menu > li > a i + span,
+  .sub-menu > li > a img + span {
+    vertical-align: middle; }
+  .sub-menu > li > a img,
+  .sub-menu > li > a i {
+    margin-right: 0.25rem;
+    display: inline-block; }
+  .sub-menu > li {
+    display: table-cell; }
+  .sub-menu.vertical > li {
+    display: block; }
+  @media screen and (min-width: 40em) {
+    .sub-menu.medium-horizontal > li {
+      display: table-cell; }
+    .sub-menu.medium-vertical > li {
+      display: block; } }
+  @media screen and (min-width: 64em) {
+    .sub-menu.large-horizontal > li {
+      display: table-cell; }
+    .sub-menu.large-vertical > li {
+      display: block; } }
+  .sub-menu.simple li {
+    line-height: 1;
+    display: inline-block;
+    margin-right: 1rem; }
+  .sub-menu.simple a {
+    padding: 0; }
+  .sub-menu.align-right::before, .sub-menu.align-right::after {
+    content: ' ';
+    display: table;
+    flex-basis: 0;
+    order: 1; }
+  .sub-menu.align-right::after {
+    clear: both; }
+  .sub-menu.align-right > li {
+    float: right; }
+  .sub-menu.expanded {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+    .sub-menu.expanded > li:first-child:last-child {
+      width: 100%; }
+  .sub-menu.icon-top > li > a {
+    text-align: center; }
+    .sub-menu.icon-top > li > a img,
+    .sub-menu.icon-top > li > a i {
+      display: block;
+      margin: 0 auto 0.25rem; }
+  .sub-menu.nested {
+    margin-left: 1rem; }
+  .sub-menu .active > a {
+    color: #fefefe;
+    background: #2199e8; }
+
 .menu-text {
   font-weight: bold;
   color: inherit;
