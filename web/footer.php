@@ -1,10 +1,10 @@
     <!-- footer -->
     <div class="expanded row footer">
-      <div class="large-10 large-offset-2 columns logo">
+      <div class="small-10 medium-10 large-10 small-offset-2 medium-offset-2 large-offset-2 columns logo">
         <img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
       </div>
       <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('texto-footer') ) : endif; ?>
-      <div class="large-2 columns">
+      <div class="small-2 medium-2 large-2 columns">
         <h4>Navegación</h4>
         <?php wp_nav_menu(
           array(
@@ -13,7 +13,7 @@
           'theme_location' => 'menu_footer'
         )); ?>
       </div>
-      <div class="large-2 columns end">
+      <div class="small-2 medium-2 large-2 columns end">
         <h4>Síguenos</h4>
         <ul class="menu vertical social">
           <li><a href="#"><i class="fi-social-facebook"></i></a></li>
@@ -54,16 +54,25 @@
         $( "#panel1" ).removeClass( "hide" );
         $( "#panel2" ).addClass( "hide" );
         $( "#panel3" ).addClass( "hide" );
+        $( "#panela" ).addClass( "active" );
+        $( "#panelb" ).removeClass( "active" );
+        $( "#panelc" ).removeClass( "active" );
       });
       $( "#panelb" ).click(function() {
         $( "#panel2" ).removeClass( "hide" );
         $( "#panel1" ).addClass( "hide" );
         $( "#panel3" ).addClass( "hide" );
+        $( "#panelb" ).addClass( "active" );
+        $( "#panela" ).removeClass( "active" );
+        $( "#panelc" ).removeClass( "active" );
       });
       $( "#panelc" ).click(function() {
         $( "#panel3" ).removeClass( "hide" );
         $( "#panel1" ).addClass( "hide" );
         $( "#panel2" ).addClass( "hide" );
+        $( "#panelc" ).addClass( "active" );
+        $( "#panela" ).removeClass( "active" );
+        $( "#panelb" ).removeClass( "active" );
       });
     </script> 
     <?php wp_footer(); ?>

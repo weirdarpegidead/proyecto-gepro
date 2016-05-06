@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- header -->
-    <div class="expanded row collapse">
+    <div class="expanded row collapse hide-for-small-only">
       <div class="large-12 columns text-center head">
         <img src="img/logo.png">
       </div>
@@ -29,31 +29,33 @@
           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
           <li class="orbit-slide text-center">
             <img src="img/s1.jpg">
+            <figcaption class="orbit-caption"><h3>Noticia desde el News Letter</h3></figcaption>
           </li>
           <li class="orbit-slide text-center">
             <img src="img/s1.jpg">
+            <figcaption class="orbit-caption"><h3>Evento importante</h3></figcaption>
           </li>
           <li class="orbit-slide text-center">
             <img src="img/s1.jpg">
+            <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
           </li>
           <li class="orbit-slide text-center">
             <img src="img/s1.jpg">
+            <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
           </li>
         </ul>
-        <nav class="orbit-bullets">
+        <!--<nav class="orbit-bullets">
           <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
           <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-        </nav>
+        </nav>-->
       </div>
-
-
     </div>
     <!-- navegacion -->
     <div class="expanded row collapse navegacion" data-sticky-container>
       <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">
-        <div class="top-bar">
+        <div class="top-bar show-for-large-only">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text"><img src="img/logo.png"></li>
@@ -69,56 +71,99 @@
             </ul>
           </div>
         </div>
+
+        <div class="top-bar hide-for-large-up">
+          <div class="top-bar-title">
+            <span data-responsive-toggle="responsive-menu">
+              <button class="menu-icon dark" type="button" data-toggle></button>
+            </span>
+            <strong>Site Title</strong>
+          </div>
+          <div id="responsive-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                  <a href="#">One</a>
+                  <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
+
+    
     <!-- identidad -->
-    <div class="expanded row collapse">
-      <div class="large-4 columns efecto">
+    <div class="row collapse">
+      <div id="panela" class="small-4 medium-4 large-4 columns efecto lean active">
         <img src="img/img1.jpg">
         <div class="caption text-center">
-          <h4>Titulo</h4>
+          <h2>Titulo</h2>
           <p>Mini descripción lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <i class="fi-target-two"></i>
         </div>
+        <i class="fi-play"></i>
+        <i class="fi-play abajo"></i>
       </div>
-      <div class="large-4 columns efecto">
+      <div id="panelb" class="small-4 medium-4 large-4 columns efecto serv">
         <img src="img/img1.jpg">
         <div class="caption text-center">
-          <h4>Titulo</h4>
+          <h2>Titulo</h2>
           <p>Mini descripción lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <i class="fi-target-two"></i>
         </div>
+        <i class="fi-play"></i>
+        <i class="fi-play abajo"></i>
       </div>
-      <div class="large-4 columns efecto">
+      <div id="panelc" class="small-4 medium-4 large-4 columns efecto noti">
         <img src="img/img1.jpg">
         <div class="caption text-center">
-          <h4>Titulo</h4>
+          <h2>Titulo</h2>
           <p>Mini descripción lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <i class="fi-target-two"></i>
         </div>
+        <i class="fi-play abajo"></i>
       </div>
     </div>
     <!-- productos -->
-    <div class="expanded row productos">
-      <div class="large-3 columns text-center">
+    <div id="panel1" class="expanded row productos">
+      <div class="medium-3 large-3 columns text-center">
         <h3>Productos</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-3 large-3 columns text-center">
         <h3>Productos</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-3 large-3 columns text-center">
         <h3>Productos</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-3 large-3 columns text-center">
         <h3>Productos</h3>
         <hr>
         <img src="http://placehold.it/150x150">
@@ -127,29 +172,29 @@
       </div>
     </div>
     <!-- servicios -->
-    <div id="panel2" class="expanded row servicios">
-      <div class="large-3 columns text-center">
+    <div id="panel2" class="expanded row servicios hide">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 1</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 2</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 3</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 4</h3>
         <hr>
         <img src="http://placehold.it/150x150">
@@ -157,28 +202,28 @@
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
 
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 5</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 6</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 7</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Servicio 8</h3>
         <hr>
         <img src="http://placehold.it/150x150">
@@ -187,29 +232,29 @@
       </div>
     </div>
     <!-- noticias -->
-    <div id="panel3" class="expanded row noticias">
-      <div class="large-3 columns text-center">
+    <div id="panel3" class="expanded row noticias hide">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Noticia 1</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Noticia 2</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Noticia 3</h3>
         <hr>
         <img src="http://placehold.it/150x150">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a href="#" class="button warning radius">LEER MÁS</a>
       </div>
-      <div class="large-3 columns text-center">
+      <div class="medium-4 large-3 columns text-center">
         <h3>Noticia 4</h3>
         <hr>
         <img src="http://placehold.it/150x150">
@@ -218,29 +263,29 @@
       </div>
     </div>
     <!-- proyectos -->
-    <div class="row collapse">
-      <div class="large-3 columns text-center efecto2">
+    <div class="expanded row collapse">
+      <div class="medium-3 large-3 columns text-center efecto2">
         <img src="img/img1.jpg">
         <div class="caption2">
           <h4>Titulo</h4>
           <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-      <div class="large-3 columns text-center efecto2">
+      <div class="medium-3 large-3 columns text-center efecto2">
         <img src="img/img1.jpg">
         <div class="caption2">
           <h4>Titulo</h4>
           <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-      <div class="large-3 columns text-center efecto2">
+      <div class="medium-3 large-3 columns text-center efecto2">
         <img src="img/img1.jpg">
         <div class="caption2">
           <h4>Titulo</h4>
           <p>Pequeño resumen excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-      <div class="large-3 columns text-center efecto2">
+      <div class="medium-3 large-3 columns text-center efecto2">
         <img src="img/img1.jpg">
         <div class="caption2">
           <h4>Titulo</h4>
@@ -290,13 +335,13 @@
     </div>
     <!-- footer -->
     <div class="expanded row footer">
-      <div class="large-10 large-offset-2 columns logo">
+      <div class="medium-10 large-10 medium-offset-2 large-offset-2 columns logo">
         <img src="img/logo.png">
       </div>
-      <div class="large-4 large-offset-2 columns">
+      <div class="medium-4 large-4 medium-offset-2 large-offset-2 columns">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="large-2 columns">
+      <div class="medium-2 large-2 columns">
         <h4>Navegación</h4>
         <ul class="menu vertical">
           <li><a href="#">HOME</a></li>
@@ -305,7 +350,7 @@
           <li><a href="#">CONTACTO</a></li>
         </ul>
       </div>
-      <div class="large-2 columns end">
+      <div class="medium-2 large-2 columns end">
         <h4>Síguenos</h4>
         <ul class="menu vertical social">
           <li><a href="#"><i class="fi-social-facebook"></i></a></li>
@@ -322,10 +367,52 @@
         <p>Diseño y Desarrollo Web <a href="#">Ilia Consultores, Ingenieria y Capacitacion</a></p>
       </div>
     </div>
+    <!-- formulario -->
+    <div class="container-fluid visible invisible2" id="formulario">
+      <div class="row header-pestana">
+        <div class="large-12 columns text-center">
+          <h5>Programas 2016</h5>
+          <h6>Inscríbete y te asesoraremos</h6>
+        </div>
+      </div>
+      <div class="row container-form">
+        <?php// if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('formulario-lateral') ) : endif; ?>
+      </div>
+      <div class="click"><span>Dejanos Tus datos</span></div>
+    </div>
     <!-- scripts -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $( ".click" ).click(function() {
+        $( "#formulario" ).toggleClass( "invisible2" );
+      });
+      $( "#panela" ).click(function() {
+        $( "#panel1" ).removeClass( "hide" );
+        $( "#panel2" ).addClass( "hide" );
+        $( "#panel3" ).addClass( "hide" );
+        $( "#panela" ).addClass( "active" );
+        $( "#panelb" ).removeClass( "active" );
+        $( "#panelc" ).removeClass( "active" );
+      });
+      $( "#panelb" ).click(function() {
+        $( "#panel2" ).removeClass( "hide" );
+        $( "#panel1" ).addClass( "hide" );
+        $( "#panel3" ).addClass( "hide" );
+        $( "#panelb" ).addClass( "active" );
+        $( "#panela" ).removeClass( "active" );
+        $( "#panelc" ).removeClass( "active" );
+      });
+      $( "#panelc" ).click(function() {
+        $( "#panel3" ).removeClass( "hide" );
+        $( "#panel1" ).addClass( "hide" );
+        $( "#panel2" ).addClass( "hide" );
+        $( "#panelc" ).addClass( "active" );
+        $( "#panela" ).removeClass( "active" );
+        $( "#panelb" ).removeClass( "active" );
+      });
+    </script> 
   </body>
 </html>

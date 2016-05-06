@@ -74,7 +74,7 @@ register_sidebar(array(
  ));
 register_sidebar(array(
  'name' => 'texto-footer',
- 'before_widget' => '<div class="large-4 large-offset-2 columns">',
+ 'before_widget' => '<div class="small-4 medium-4 large-4 small-offset-2 medium-offset-2 large-offset-2 columns">',
  'after_widget' => '</div>',
  ));
 register_sidebar(array(

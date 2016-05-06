@@ -26,23 +26,23 @@
       </div>
       <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit>
         <ul class="orbit-container">
-          <!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
           <?php query_posts('category_name=slide&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
           <li class="orbit-slide text-center">
             <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+            <figcaption class="orbit-caption"><h3><?php the_title(); ?></h3></figcaption>
           </li>
           <?php endwhile; wp_reset_query(); ?>
         </ul>
-        <nav class="orbit-bullets">
+        <!--<nav class="orbit-bullets">
           <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
           <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-        </nav>
+        </nav>-->
       </div>
     </div>
-    
     <?php } else { ?>
     <!-- sin nada -->
     <?php } ?>
@@ -55,7 +55,6 @@
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">
                 <a href="<?php echo site_url(); ?>" style="padding:0;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
-                
               </li>
             </ul>
           </div>

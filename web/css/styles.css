@@ -25,37 +25,93 @@
 	max-height: none !important; }
 /* === identidad === */
 .efecto {
-	background: white;
+	background: #006BB1;
 	cursor: pointer;
-	max-height: 350px; }
-.efecto img {
-	opacity: 0.25;
-	transition:All 0.5s ease;
-	-webkit-transition:All 0.5s ease;
-	-moz-transition:All 0.5s ease;
-	-o-transition:All 0.5s ease; }
-.efecto:hover img {
-	opacity: 1; }
+	max-height: 266px;
+	position: relative; }
+	.efecto.lean {
+		background: #474646 ; }
+		.efecto.lean i {
+			color: #474646; }
+		.efecto.lean p, .efecto.lean h2 {
+			color: white; }
+	.efecto.serv {
+		background: #006BB1; }
+		.efecto.serv i {
+			color: #006BB1 ; }
+		.efecto.serv p, .efecto.serv h2 {
+			color: white; }
+	.efecto.noti {
+		background: #E6E6E6; }
+		.efecto.noti i {
+			color: #E6E6E6; }
+		.efecto.noti p, .efecto.noti h2 {
+			color: black; }
+.efecto .esconder {
+	opacity: 0 !important; }
+.efecto img { opacity: 0; }
+.efecto i.fi-play {
+	z-index: 4;
+	font-size: 10rem;
+	position: absolute;
+	top: 1rem;
+	right: -80px; }
+.efecto i.fi-play.abajo {
+	opacity: 0; }
+.efecto.active i.fi-play.abajo {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    opacity: 1;
+	z-index: 4;
+	font-size: 10rem;
+	position: absolute;
+	top: 184px;
+    right: 160px; }
 .efecto .caption {
 	width: 50%;
 	margin: 0 auto;
-	background: rgba(255, 255, 255, 0);
 	position: relative;
-	bottom: 215px;
+	bottom: 187px; }
+.efecto:hover .caption p {
+	opacity: 1;
+	top: 0px; }
+.efecto:hover .caption h2 {
+	top: 0px; }
+.efecto.active .caption p {
+	opacity: 1;
+	top: 0px; }
+.efecto.active .caption h2 {
+	top: 0px; }
+.efecto .caption i {
+	opacity: 0.1;
+	color: white;
+	font-size: 15rem;
+	position: absolute;
+	left: -13px;
+	top: -123px; }
+.efecto .caption h2 {
+	opacity: 1;
+	position: relative;
+	top: 25px;
 	transition:All 0.5s ease;
 	-webkit-transition:All 0.5s ease;
 	-moz-transition:All 0.5s ease;
 	-o-transition:All 0.5s ease; }
-.efecto:hover .caption {
-	background: rgba(255, 255, 255, 0.75); }
-.efecto .caption h4, .efecto .caption p {
+.efecto .caption p {
+	opacity: 0;
 	position: relative;
-	color: #222222; }
+	top: 100px;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease; }
 /* === productos === */
 .productos {
 	background-image: url("../img/img2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 2rem;
 	padding-bottom: 4rem; }
 .productos h3, .productos p, .productos img, .productos a.button {
 	margin-top: 4rem;
@@ -68,7 +124,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 4rem;
-	padding-top: 4rem; }
+	padding-top: 6rem; }
 .servicios h4, .servicios p, .servicios img, .servicios a.button {
 	color: #333333; }
 .servicios hr {
@@ -79,15 +135,18 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 4rem;
-	padding-top: 4rem; }
+	padding-top: 6rem; }
 .noticias h3, .noticias p, .noticias img, .noticias a.button {
 	color: white; }
 .noticias hr {
 	border-bottom: 1px solid #cccccc; }
 /* === proyectos === */
+.efecto2 {
+	position: relative; }
 .efecto2 .caption2 {
 	opacity: 0;
-	position: relative;
+	position: absolute;
+	bottom: -100px;
 	padding: 1rem;
 	background-color: white;
 	transition:All 0.5s ease;
@@ -130,7 +189,7 @@
 .footer {
 	background-image: url("../img/img3.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%; }
+	background-size: cover; }
 .footer .logo {
 	margin-top: 4rem;
 	margin-bottom: 4rem; }
@@ -163,12 +222,15 @@
 	/* #006BB1 */
 .container-fluid .click {
 	background-color: #006BB1;
+	border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 	cursor: pointer;
 	font-weight: bold;
 	position: absolute;
 	color: white;
 	top: 50%;
-	left: -115px;
+	left: -116px;
 	padding: 1rem;
 	border-radius: 3px 3px 3px 3px;
 	-ms-transform: rotate(270deg); /* IE 9 */
