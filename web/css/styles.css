@@ -10,6 +10,18 @@
 	position: absolute;
 	z-index: 1; }
 /* === navegacion === */
+.navegacion .top-bar {
+    background-color: rgba(230, 230, 230, 1); }
+.navegacion .top-bar ul {
+    background-color: transparent; }
+.navegacion .top-bar ul li ul {
+    background-color: rgba(230, 230, 230, 1); }
+.navegacion .sticky .top-bar {
+	background: rgba(230, 230, 230, 1); }
+.navegacion .is-stuck .top-bar {
+	background: rgba(230, 230, 230, 0.7); }
+.navegacion .is-anchored .top-bar {
+	background: rgba(230, 230, 230, 1); }
 .navegacion .top-bar .menu a {
 	color: #666666;
 	font-size: 0.8rem;
@@ -23,6 +35,19 @@
 	overflow: visible; }
 .slide .orbit-container li {
 	max-height: none !important; }
+/* === identidad nueva === */
+.identidad {
+	margin-bottom: 2rem;
+	background: #fafafa;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 1rem;
+	padding-bottom: 1rem; }
+.identidad h3,.identidad h5, .identidad p, .identidad img, .identidad a.button {
+	margin-top: 1rem;
+	color: #999999; }
+.identidad hr {
+	border-bottom: 1px solid #cccccc; }
 /* === identidad === */
 .efecto {
 	background: #006BB1;
@@ -111,59 +136,79 @@
 	background-image: url("../img/img2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 2rem;
-	padding-bottom: 4rem; }
-.productos h3, .productos p, .productos img, .productos a.button {
-	margin-top: 4rem;
-	color: white; }
-.productos hr {
-	border-bottom: 1px solid #cccccc; }
+	padding-top: 1rem; }
+	.productos h6, .productos p, .productos img, .productos a.button {
+		color: white; }
+	.productos p {
+		font-size: 0.80rem;	}
+	.productos a.button {
+		margin-bottom: 0rem; }
+	.productos hr {
+		border-bottom: 1px solid #cccccc; }
 /* === servicios === */
 .servicios {
 	background-image: url("../img/img5.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 4rem;
-	padding-top: 6rem; }
-.servicios h4, .servicios p, .servicios img, .servicios a.button {
-	color: #333333; }
-.servicios hr {
-	border-bottom: 1px solid #cccccc; }
+	padding-top: 1rem; }
+	.servicios h6, .servicios p, .servicios img, .servicios a.button {
+		color: #333333; }
+	.servicios p {
+		font-size: 0.80rem;	}
+	.servicios a.button {
+		margin-bottom: 0rem; }
+	.servicios hr {
+		border-bottom: 1px solid #cccccc; }
 /* === noticias === */
 .noticias {
 	background-image: url("../img/img2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 4rem;
-	padding-top: 6rem; }
-.noticias h3, .noticias p, .noticias img, .noticias a.button {
-	color: white; }
-.noticias hr {
-	border-bottom: 1px solid #cccccc; }
+	padding-top: 1rem; }
+	.noticias h6, .noticias p, .noticias img, .noticias a.button {
+		color: white; }
+	.noticias p {
+		font-size: 0.80rem;	}
+	.noticias a.button {
+		margin-bottom: 0rem; }
+	.noticias hr {
+		border-bottom: 1px solid #cccccc; }
 /* === proyectos === */
+.proyectos {
+	margin-bottom: 2rem; }
 .efecto2 {
 	position: relative; }
 .efecto2 .caption2 {
-	opacity: 0;
+	height: 100%;
+	width: auto;
+	opacity: 0.3;
 	position: absolute;
-	bottom: -100px;
-	padding: 1rem;
+	bottom: 0px;
 	background-color: white;
 	transition:All 0.5s ease;
 	-webkit-transition:All 0.5s ease;
 	-moz-transition:All 0.5s ease;
 	-o-transition:All 0.5s ease; }
 .efecto2:hover .caption2 {
-	opacity: 1;
-	margin-top: -100px;
-	margin-bottom: 100px; }
+	opacity: 0.9; }
+.efecto2 .caption2 h4 {
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
+	margin-top: 80px; }
+	.efecto2:hover .caption2 h4 {
+		margin-top: 50px; }
 /* === testimonios === */
-.testimonios, .testimonios.orbit {
+.testimonios {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
 	background-color: #006bb1; }
+	.testimonios .orbit {
+		margin-bottom: 8rem; }
 .testimonios .orbit-container {
 	height: auto !important;
-	overflow: visible;
-	padding-bottom: 2rem; }
+	overflow: visible; }
 .testimonios .orbit-container li {
 	max-height: none !important; }
 .testimonios h3, .testimonios blockquote, .testimonios cite, .testimonios p {
@@ -171,8 +216,7 @@
 .testimonios p {
 	margin-bottom: 0; }
 .testimonios h3 {
-	margin-top: 3rem;
-	margin-bottom: 2rem; }
+	margin-bottom: 1rem; }
 .testimonios .orbit-bullets {
 	padding-top: 0;
 	margin-bottom: 0;
@@ -187,23 +231,29 @@
 	display: none; }
 /* === footer === */
 .footer {
-	background-image: url("../img/img3.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; }
-.footer .logo {
-	margin-top: 4rem;
-	margin-bottom: 4rem; }
-.footer p, .footer .menu {
-	margin-bottom: 5rem; }
+	height: 300px;
+	position: relative;
+	overflow: hidden; }
+	.footer .items{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		background: rgba(255, 255, 255, 1);
+		position: absolute;
+		z-index: 999999999;	}
+	.footer .mapa {
+		position: absolute;
+		opacity: 0.9; }
 .footer h4, .footer p {
 	color: #333333; }
 .footer .menu a {
-	color: #555555; }
+	color: #666666; }
 .footer .menu.social {
 	font-size: 2.5rem; }
 .footer .menu.social a {
 	padding-bottom: 0;
 	padding-top: 0; }
+.footer .menu.contacto {
+	font-size: 1.2rem; }
 /* === disclaimer === */
 .disclaimer {
 	background-color: #f1f1f1; }
@@ -260,13 +310,24 @@
 	font-size: 0.75rem;
 	margin-bottom: 1.5rem; }
 .contenido p, .contenido h1, .contenido h2, .contenido h3, .contenido h4, .contenido h5, .contenido h6 {
-	color: #333333; }
-.mascara img {
+	color: #555555; }
+.contenido p {
+	font-size: 0.85rem; }
+.contenido .lateral {
+	border-right: 1px solid #999999; }
+.drop button.button i {
+	font-size: 5rem; }
+.dropdown-pane {
+    padding-top: 0rem;
+    padding-bottom: 0rem; }
+.dropdown-pane.large {
+	width: 370px; }
+/*.mascara img {
 	border-radius: 400px !important;
 	-moz-border-radius: 400px !important;
 	-webkit-border-radius: 400px !important;
 	-khtml-border-radius: 400px !important;
-	overflow: hidden; }
+	overflow: hidden; }*/
 /* === seccion privada === */
 .sidebar .callout {
 	margin-bottom: 0; }
@@ -285,14 +346,34 @@
 	float: left !important; }
 .alignjustify {
 	text-align: justify; }
+/* === calendario ===*/
+.calendario .lista {
+	height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden; }
+.calendario .lista li {
+	font-size: 0.85rem;
+	margin-bottom: 1rem; }
+	.calendario .lista li span {
+	padding-right: 0.55rem;
+	margin-right: 0.55rem;
+	border-right: 1px solid #666666; }
+.boletin p {
+	font-size: 0.85rem; }
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-@media handheld, only screen and (max-width: 780px) {}
+@media handheld, only screen and (max-width: 1024px) {
+	.navegacion .top-bar .top-bar-right li a {
+		font-size: 2rem; }
+}
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-@media handheld, only screen and (max-width: 400px) {}
+@media handheld, only screen and (max-width: 640px) {
+	.top-bar .top-bar-right, .top-bar .top-bar-left {
+    width: 50%; }
+}
 /* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */

@@ -1,0 +1,235 @@
+.slick-slider{
+	position:relative;
+	display:block;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	-webkit-touch-callout:none;
+	-khtml-user-select:none;
+	-ms-touch-action:pan-y;
+	touch-action:pan-y;
+	-webkit-tap-highlight-color:transparent;}
+.slick-list{
+	position:relative;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0 }
+.slick-list:focus{
+	outline:none }
+.slick-list.dragging{
+	cursor:pointer;cursor:hand }
+.slick-slider .slick-track,.slick-slider .slick-list{
+	-webkit-transform:translate3d(0, 0, 0);
+	-moz-transform:translate3d(0, 0, 0);
+	-ms-transform:translate3d(0, 0, 0);
+	-o-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)}
+.slick-track{
+	position:relative;
+	top:0;
+	left:0;
+	display:block}
+.slick-track:before,.slick-track:after{
+	display:table;
+	content:''}
+.slick-track:after{
+	clear:both}
+.slick-loading .slick-track{
+	visibility:hidden}
+.slick-slide{
+	display:none;
+	float:left;
+	height:100%;
+	min-height:1px}
+.slick-slide:focus{
+	outline:none !important}
+[dir='rtl'].slick-slide{
+	float:right}
+.slick-slide img{
+	display:block}
+.slick-slide.slick-loading img{
+	display:none}
+.slick-slide.dragging img{
+	pointer-events:none}
+.slick-initialized .slick-slide{
+	display:block}
+.slick-loading .slick-slide{
+	visibility:hidden}
+.slick-vertical .slick-slide{
+	display:block;height:auto;border:1px solid transparent}
+.slick-arrow.slick-hidden{
+	display:none}
+.center-content{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	float:none}
+section.content-rows{padding:250px 0}
+@media (max-width: 991px){
+	section.content-rows{
+		padding:150px 0}
+}
+section.content-rows .content{
+	padding-right:4%}
+section.content-rows p,section.content-rows h2{
+	color:#fff}
+section.content-rows p a{
+	color:#fff;
+	text-decoration:underline}
+.hero{
+	background:#8a7d6e url("/assets/pages/home/bg-hero1.jpg") 50% 0 no-repeat;
+	background-size:cover}
+.hero .play-callout a{
+	display:inline-block}
+.hero .play-callout svg{
+	height:68px;width:68px;opacity:0.8}
+.hero .play-callout h5{
+	padding-top:10px}
+.hero .play-callout a:hover svg{
+	opacity:1}
+.hero .hero-inner{
+	position:relative;z-index:10}
+.hero .graphics-overlay{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:0;
+	padding-bottom:20%;
+	z-index:2;
+	background-image:-webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.5) 100%);
+	background-image:-o-linear-gradient(top, transparent 0%, rgba(0,0,0,0.5) 100%);
+	background-image:linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0)}
+@media (min-width: 992px){
+	.hero .graphics-overlay{
+		padding-bottom:17%}
+}
+@media (max-width: 767px){
+	.hero .graphics-overlay{
+		display:none}
+}
+@media (min-width: 1200px){
+	.hero .graphics-overlay{
+		padding-bottom:290px}
+}
+.hero .graphics-overlay svg{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50%;
+	height:auto;
+	display:none}
+.hero .graphics-overlay svg line,.hero .graphics-overlay svg polyline{
+	stroke:rgba(255,255,255,0.2)}
+.hero .graphics-overlay svg rect,.hero .graphics-overlay svg path,.hero .graphics-overlay svg polygon{
+	fill:rgba(255,255,255,0.2)}
+.hero .graphics-overlay svg g rect{opacity:0;
+	-moz-transform:scaleX(0);
+	-ms-transform:scaleX(0);
+	-webkit-transform:scaleX(0);
+	transform:scaleX(0);
+	-moz-transform-origin:0% 50% 50%;
+	-ms-transform-origin:0% 50% 50%;
+	-webkit-transform-origin:0% 50% 50%;
+	transform-origin:0% 50% 50%;
+	-webkit-transition:transform 80ms;
+	-o-transition:transform 80ms;
+	transition:transform 80ms}
+.hero .graphics-overlay svg g rect.visible{
+	opacity:1;
+	-moz-transform:scaleX(1);
+	-ms-transform:scaleX(1);
+	-webkit-transform:scaleX(1);
+	transform:scaleX(1)}
+.hero .graphics-overlay svg:nth-child(2){
+	width:45%;
+	left:auto;
+	top:auto;
+	bottom:30px;
+	right:30px}
+.hero .graphics-overlay svg:nth-child(2) g polyline{
+	opacity:0;
+	-moz-transform:translate(0, 50%);
+	-ms-transform:translate(0, 50%);
+	-webkit-transform:translate(0, 50%);
+	transform:translate(0, 50%);
+	-webkit-transition:all 180ms;
+	-o-transition:all 180ms;
+	transition:all 180ms}
+.hero .graphics-overlay svg:nth-child(2) g polyline.visible{
+	opacity:1;
+	-moz-transform:translate(0, 0);
+	-ms-transform:translate(0, 0);
+	-webkit-transform:translate(0, 0);
+	transform:translate(0, 0)}
+@media (min-width: 992px){
+	.hero.ready .graphics-overlay svg{
+		display:block}
+}
+@media (min-width: 1400px){
+	.hero,.hero .hero-inner{
+		height:675px}
+}
+@media (min-width: 992px) and (max-width: 1200px){
+	.hero{
+		padding:100px 0}
+}
+@media (max-width: 991px){
+	.hero{
+		padding:100px 0}
+	.hero h1{
+		font-size:40px}
+}
+@media (max-width: 767px){
+	.hero{
+		background:#76748f url();
+		padding:0}
+	.hero h1{
+		font-size:28px}
+}
+.invisible{
+	color:transparent}
+@media (max-width: 767px){
+	.hero .center-content h1{
+		line-height:40px}
+}
+#client-quotes #logo-slider .slick-slide img{
+	opacity:0.5;
+	display:inline }
+@media (max-width: 767px){
+	#client-quotes #logo-slider .slick-slide img{
+		opacity:1 }
+}
+#client-quotes #logo-slider .slick-slide:hover{
+	cursor:pointer }
+#client-quotes #logo-slider .slick-slide.slick-current img,
+#client-quotes #logo-slider .slick-slide.slick-center img{
+	opacity:1;
+	-webkit-transition:opacity 350ms;
+	transition:opacity 350ms;}
+#client-quotes .slick-dots{text-align:center;margin:40px 0 0 0;padding-left:0}
+@media (max-width: 991px){
+	#client-quotes .slick-dots{margin-top:10px}
+}
+#client-quotes .slick-dots li{
+	display:inline-block;
+	margin:10px 5px;
+	background-color:#fff;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	overflow:hidden;
+	border:1px solid #fff;
+	text-indent:-10000em;
+	cursor:pointer; }
+#client-quotes .slick-dots li.slick-active{
+	background:transparent;
+	border:2px solid #fff; }
+#client-quotes p,#client-quotes footer{
+	color:#fff; }

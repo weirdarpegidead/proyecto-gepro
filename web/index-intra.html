@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="foundation-icons.css" />
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- Menu -->
+          <ul class="vertical menu">
+            <li><a href="#">ESCRITORIO</a></li>
+            <li><a href="#">HERRAMIENTAS DE TRABAJO</a></li>
+            <li><a href="#">HERRAMIENTAS PERSONALES</a></li>
+            <li><a href="#">EMPRESA</a></li>
+            <li><a href="#">CERRAR SESIÓN</a></li>
+          </ul>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <!-- navegacion -->
+          <div class="expanded row collapse navegacion">
+            <div class="large-12 columns">
+              <div class="top-bar">
+                <div class="top-bar-left">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><img src="img/logo.png"></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right show-for-large">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><img src="http://placehold.it/150x50"></li>
+                    <li><a href="#">ESCRITORIO</a></li>
+                    <li><a href="#">hERRAMIENTAS DE TRABAJO</a></li>
+                    <li><a href="#">HERRAMIENTAS PERSONALES</a></li>
+                    <li><a href="#">EMPRESA</a></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right show-for-medium-only">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><img src="http://placehold.it/150x50"></li>
+                    <li><a href="#" data-toggle="offCanvasRight"><i class="fi-align-justify"></i></a></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right show-for-small-only">
+                  <ul class="dropdown menu align-right" data-dropdown-menu>
+                    <li><a href="#" data-toggle="offCanvasRight"><i class="fi-align-justify"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- contenido -->
+          <div class="row contenido">
+            <div class="large-12 columns">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="active">
+                  <a href="#">Solicitudes</a>
+                  <ul class="menu">
+                    <li><a href="#">Item 1A</a></li>
+                    <!-- ... -->
+                  </ul>
+                </li>
+                <li><a href="#">Proceso</a></li>
+                <li><a href="#">Herramientas de Trabajo</a></li>
+                <li><a href="#">Clientes</a></li>
+              </ul>
+            </div>
+            <div class="small-6 medium-3 large-3 columns calendario">
+              <div class="callout">
+                <img src="http://placehold.it/300x300">
+              </div>
+              <div class="callout secondary">
+                <ul class="no-bullet lista">
+                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
+                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="small-6 medium-9 large-9 columns">
+              <img src="http://placehold.it/1000x200">
+              <div class="row">
+                <div class="large-8 columns">
+                  <div class="orbit" role="region" data-orbit data-orbit>
+                    <ul class="orbit-container">
+                      <!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
+                      <li class="orbit-slide text-center">
+                        <img src="http://placehold.it/700x500">
+                        <figcaption class="orbit-caption"><h3>Noticia desde el News Letter</h3></figcaption>
+                      </li>
+                      <li class="orbit-slide text-center">
+                        <img src="http://placehold.it/700x500">
+                        <figcaption class="orbit-caption"><h3>Evento importante</h3></figcaption>
+                      </li>
+                      <li class="orbit-slide text-center">
+                        <img src="http://placehold.it/700x500">
+                        <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
+                      </li>
+                      <li class="orbit-slide text-center">
+                        <img src="http://placehold.it/700x500">
+                        <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
+                      </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                      <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                      <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
+                      <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
+                    </nav>
+                  </div>
+                </div>
+                <div class="large-4 columns boletin">
+                  <div class="callout success">
+                    <h6>Nuestra Gente</h6>
+                    <div class="row collapse">
+                      <div class="large-4 columns">
+                        <img src="http://placehold.it/100x100">
+                      </div>
+                      <div class="large-8 columns">
+                        <p><strong>Nombre: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><strong>Cumpleaños: </strong>Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="expanded row collapse footer">
+            <div class="large-12 columns items">
+              <div class="row">
+                <div class="medium-6 large-6 columns">
+                  <img src="img/logo.png">
+                </div>
+                <div class="medium-6 large-6 columns text-right">
+                  <ul class="menu social align-right">
+                    <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="fi-social-youtube"></i></a></li>
+                  </ul>
+                  <ul class="menu contacto align-right">
+                    <li><a href="tel://+56223547050"><i class="fi-telephone"></i>Telefono: (+56 2) 2354 7050</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="large-12 columns mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.646445079888!2d-70.61302819087281!3d-33.49761715948321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d009320fce59%3A0x7300292c905d08eb!2sMIDE+UC!5e0!3m2!1ses!2scl!4v1462889485117" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>            
+          </div>
+          <!-- disclaimer -->
+          <div class="expanded row collapse disclaimer">
+            <div class="large-12 columns text-center">
+              <p>Diseño y Desarrollo Web <a href="#">Ilia Consultores, Ingenieria y Capacitacion</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- scripts -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
