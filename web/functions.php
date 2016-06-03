@@ -10,7 +10,8 @@ add_filter( 'show_admin_bar', '__return_false' );
 /* === menus === */
 register_nav_menus ( array(
     'menu_principal' => 'menu_header',
-    'menu_footer' => 'menu_inferior'
+    'menu_footer' => 'menu_inferior',
+    'menu_intra' => 'intranet'
     ));
 /* === agrego una extencion para el excerpt personalizada ===
 function custom_excerpt_length( $length ) {
@@ -80,6 +81,11 @@ register_sidebar(array(
 register_sidebar(array(
  'name' => 'disclaimer',
  'before_widget' => '<div class="large-12 columns text-center">',
+ 'after_widget' => '</div>',
+ ));
+register_sidebar(array(
+ 'name' => 'calendario',
+ 'before_widget' => '<div>',
  'after_widget' => '</div>',
  ));
 ?>

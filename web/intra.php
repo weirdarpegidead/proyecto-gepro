@@ -1,12 +1,20 @@
     <?php
     /*
-    Template Name: seccion privada
+    Template Name: intra-blog
     */
     ?>
     <?php get_header(); ?>
     <?php if ( is_user_logged_in() ) { ?>
     <!-- contenido de seccion privada estando logeado -->
     <div class="row contenido">
+      <div class="large-12 columns">
+        <?php wp_nav_menu(
+          array(
+          'container' => false,
+          'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
+          'theme_location' => 'menu_intra'
+        )); ?>
+      </div>
       <div class="large-9 columns">
         <h3><?php the_title(); ?></h3>
         <div class="row">

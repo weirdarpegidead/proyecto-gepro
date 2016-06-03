@@ -6,6 +6,9 @@
     <?php get_header(); ?>
     <!-- contenido nosotros -->
     <div class="row contenido">
+      <div class="large-12 columns">
+        <h2>Quienes Somos</h2>
+      </div>
       <div class="large-4 columns lateral">
         <div class="row">
           <div class="large-12 columns">

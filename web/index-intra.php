@@ -8,23 +8,17 @@
           <!-- contenido de seccion privada estando logeado -->
           <div class="row contenido">
             <div class="large-12 columns">
-              <ul class="dropdown menu" data-dropdown-menu>
-                <li class="active">
-                  <a href="#">Solicitudes</a>
-                  <ul class="menu">
-                    <li><a href="#">Item 1A</a></li>
-                    <!-- ... -->
-                  </ul>
-                </li>
-                <li><a href="#">Proceso</a></li>
-                <li><a href="#">Herramientas de Trabajo</a></li>
-                <li><a href="#">Clientes</a></li>
-              </ul>
+              <?php wp_nav_menu(
+                array(
+                'container' => false,
+                'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
+                'theme_location' => 'menu_intra'
+              )); ?>
             </div>
             <div class="small-6 medium-3 large-3 columns calendario">
-              <div class="callout">
-                <img src="http://placehold.it/300x300">
-              </div>
+              
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('calendario') ) : endif; ?>
+              
               <div class="callout secondary">
                 <ul class="no-bullet lista">
                   <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>

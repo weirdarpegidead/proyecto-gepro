@@ -1,43 +1,24 @@
     <?php
     /*
-    Template Name: seccion privada 3
+    Template Name: intra4
     */
     ?>
     <?php get_header(); ?>
     <?php if ( is_user_logged_in() ) { ?>
     <!-- contenido de seccion privada estando logeado -->
     <div class="row contenido">
+      <div class="large-12 columns">
+        <?php wp_nav_menu(
+          array(
+          'container' => false,
+          'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
+          'theme_location' => 'menu_intra'
+        )); ?>
+      </div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="large-9 columns">
         <h2><?php the_title(); ?></h2>
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout secondary">
-              <div class="row">
-                <div class="large-2 columns">
-                  <img src="http://placehold.it/150x150">
-                </div>
-                <div class="large-10 columns">
-                  <h5>Evento de prueba</h5>
-                  <p>Resumen</p>
-                  <a href="#">Ver Evento Completo</a>
-                </div>
-              </div>
-            </div>
-            <div class="callout secondary">
-              <div class="row">
-                <div class="large-2 columns">
-                  <img src="http://placehold.it/150x150">
-                </div>
-                <div class="large-10 columns">
-                  <h5>Evento de prueba</h5>
-                  <p>Resumen</p>
-                  <a href="#">Ver Evento Completo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php the_content(); ?>
       </div>
       <?php endwhile; else: ?><p>Lo sentimos, no se han encontrado entradas.</p>
       <?php endif; ?>
