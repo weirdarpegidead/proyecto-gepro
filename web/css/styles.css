@@ -46,10 +46,11 @@
 /* === seccion final ===*/
 .final {
 	background: #f1f1f1;
-	padding-top: 2rem;
 	padding-bottom: 2rem; }
-	.final h4, .final p {
-		color: #777777; }
+	.final h4 {
+		color: white;
+		position: relative;
+    	top: 111px; }
 	.final p {
 		font-size: 0.8rem; }
 /* === identidad nueva === */

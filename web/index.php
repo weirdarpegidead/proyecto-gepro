@@ -169,28 +169,28 @@
           <div class="large-12 columns final">
             <div class="row">
               <div class="small-6 medium-3 columns text-center">
-                <h4>NewsLetter</h4>
-                <a href="<?php echo site_url(); ?>/newsletter/"><img src="<?php bloginfo('template_directory'); ?>/img/1.jpg"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="<?php echo site_url(); ?>/newsletter/">
+                  <h4>NewsLetter</h4>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/1.jpg">
+                </a>
               </div>
               <div class="small-6 medium-3 columns text-center">
-                <h4>Servicios</h4>
-                <a href="<?php echo site_url(); ?>/servicios/"><img src="<?php bloginfo('template_directory'); ?>/img/2.jpg"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="<?php echo site_url(); ?>/servicios/">
+                  <h4>Servicios</h4>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/2.jpg">
+                </a>
               </div>
               <div class="small-6 medium-3 columns text-center">
-                <h4>Areas</h4>
-                <a href="<?php echo site_url(); ?>/mineria/"><img src="<?php bloginfo('template_directory'); ?>/img/3.jpg"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="<?php echo site_url(); ?>/mineria/">
+                  <h4>Areas</h4>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/3.jpg">
+                </a>
               </div>
               <div class="small-6 medium-3 columns text-center">
-                <h4>Proyectos</h4>
-                <a href="<?php echo site_url(); ?>/proyectos/"><img src="<?php bloginfo('template_directory'); ?>/img/4.jpg"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="<?php echo site_url(); ?>/proyectos/">
+                  <h4>Proyectos</h4>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/4.jpg">
+                </a>
               </div>
             </div>
           </div>
