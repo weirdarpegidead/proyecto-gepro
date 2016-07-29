@@ -169,8 +169,8 @@
           <div class="large-12 columns final">
             <div class="row">
               <div class="small-6 medium-3 columns text-center">
-                <a href="<?php echo site_url(); ?>/newsletter/">
-                  <h4>NewsLetter</h4>
+                <a href="<?php echo site_url(); ?>/que-hacemos/">
+                  <h4>Como lo Hacemos</h4>
                   <img src="<?php bloginfo('template_directory'); ?>/img/1.jpg">
                 </a>
               </div>
@@ -182,13 +182,13 @@
               </div>
               <div class="small-6 medium-3 columns text-center">
                 <a href="<?php echo site_url(); ?>/mineria/">
-                  <h4>Areas</h4>
+                  <h4>Experiencia</h4>
                   <img src="<?php bloginfo('template_directory'); ?>/img/3.jpg">
                 </a>
               </div>
               <div class="small-6 medium-3 columns text-center">
-                <a href="<?php echo site_url(); ?>/proyectos/">
-                  <h4>Proyectos</h4>
+                <a href="<?php echo site_url(); ?>/newsletter/">
+                  <h4>NewsLetter</h4>
                   <img src="<?php bloginfo('template_directory'); ?>/img/4.jpg">
                 </a>
               </div>

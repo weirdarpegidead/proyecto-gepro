@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/styles.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/foundation-icons.css" />
+    <!-- wordpress -->
+    <?php wp_head(); ?>
   </head>
   <body>
     <div class="off-canvas-wrapper">
@@ -73,27 +75,26 @@
             </div>
           </div>
           <!-- navegacion pc -->
-          <div class="expanded row collapse navegacion show-for-large" data-sticky-container>
-            <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">
+          <div class="expanded row collapse navegacion show-for-large">
+            <div class="large-12 columns">
               <?php if ( is_user_logged_in() ) { ?>
               <div class="top-bar">
                 <div class="top-bar-left">
                   <ul class="dropdown menu" data-dropdown-menu>
                     <li class="menu-text">
                       <a href="<?php echo site_url(); ?>" style="padding:0;"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+                      <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Cerrar Sesión</a></li>
+                      <li><a href="http://desarrollo.ilia.cl/gepro/escritorio/">Intranet</a></li>
                     </li>
                   </ul>
                 </div>
                 <div class="top-bar-right">
-                  <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text"><img src="http://placehold.it/205x52"></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/escritorio/">Escritorio</a></li>
-                    <!--<li><a href="http://desarrollo.ilia.cl/gepro/prueba/">Link 1</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/descarga-de-archivos-internos/">Link 2</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/eventos-y-actividades-2/">Link 3</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/pagina-de-prueba/">Link 4</a></li>-->
-                    <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Cerrar Sesión</a></li>
-                  </ul>
+                  <?php wp_nav_menu(
+                    array(
+                    'container' => false,
+                    'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu><li class="menu-text"><img src="http://placehold.it/205x52"></li>%3$s</ul>',
+                    'theme_location' => 'menu_principal'
+                    )); ?>
                 </div>
               </div>
               <?php }  else { ?>

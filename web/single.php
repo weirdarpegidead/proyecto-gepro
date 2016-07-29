@@ -1,11 +1,11 @@
     <?php get_header(); ?>
     <!-- contenido single -->
-    <div class="row contenido">
+    <div class="row contenido single">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div class="large-5 columns mascara">
+      <div class="large-3 columns mascara">
         <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?>
       </div>
-      <div class="large-7 columns">
+      <div class="large-9 columns">
         <h3><?php the_title(); ?></h3>
         <div class="row">
           <div class="large-4 columns meta"><i class="fi-calendar"></i> <?php the_time('F j, Y') ?></div>
@@ -14,9 +14,7 @@
         </div>
         <?php the_content(); ?>
       </div>
-      <div class="row">
-        <div class="large-12 columns"><?php comments_template(); ?></div>
-      </div>
+      <div class="large-12 columns"><?php comments_template(); ?></div>
       <?php endwhile; else: ?><p>Lo sentimos, no se han encontrado entradas.</p>
       <?php endif; ?>
     </div>

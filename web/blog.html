@@ -11,20 +11,9 @@
     <link rel="stylesheet" href="foundation-icons.css" />
   </head>
   <body>
-    <!-- header -->
-    <div class="expanded row collapse">
-      <div class="large-12 columns text-center head">
-        <img src="img/logo.png">
-      </div>
-      <div class="large-12 columns">
-        <div>
-          <img src="img/s1.jpg">
-        </div>
-      </div>
-    </div>
     <!-- navegacion -->
-    <div class="expanded row collapse navegacion" data-sticky-container>
-      <div class="large-12 columns" data-sticky data-options="marginTop:0;" style="width:100%" data-btm-anchor="content:bottom">
+    <div class="expanded row collapse navegacion">
+      <div class="large-12 columns">
         <div class="top-bar">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
@@ -56,39 +45,329 @@
         </div>
       </div>
     </div>
-    <div class="row contenido">
-      <div class="large-4 columns text-center">
-        <img src="http://placehold.it/700x300">
-        <h5>Titulo</h5>
-        <div class="row">
-          <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
-          <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
-          <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#" class="button warning">Seguir leyendo</a>
+    <div class="row collapse">
+      <div class="medium-2 columns">
+        <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+          <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Gepro Personas</a></li>
+          <li class="tabs-title"><a href="#panel2v">Nuestro Software</a></li>
+          <li class="tabs-title"><a href="#panel3v">Simulación de Procesos</a></li>
+          <li class="tabs-title"><a href="#panel4v">Consultores para la Eficiencia</a></li>
+          <li class="tabs-title"><a href="#panel5v">Gestion Integral de Proyectos</a></li>
+          <li class="tabs-title"><a href="#panel6v">Last Planner System</a></li>
+          <li class="tabs-title"><a href="#panel7v">Gestión de la Producción</a></li>
+          <li class="tabs-title"><a href="#panel8v">Diseño y Construcción Virtual</a></li>
+          <li class="tabs-title"><a href="#panel9v">Programa de Transformación</a></li>
+        </ul>
       </div>
-      <div class="large-4 columns text-center">
-        <img src="http://placehold.it/700x300">
-        <h2>Titulo</h2>
-        <div class="row">
-          <div class="large-4 columns">fecha</div>
-          <div class="large-4 columns">user</div>
-          <div class="large-4 columns">comentarios</div>
+      <div class="medium-10 columns">
+        <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+          <div class="tabs-panel is-active" id="panel1v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 1</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel2v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 2</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel3v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 3</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel4v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 4</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel5v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 5</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel6v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 6</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel7v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 7</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel8v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 8</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel9v">
+            <div class="row contenido">
+              <div class="large-12 columns">
+                <h4>Proyecto en Ejecución 9</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+              <div class="large-12 columns">
+                <h4>Proyectos Ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-4 columns text-center end">
+                <img src="http://placehold.it/700x300">
+                <h5>Titulo</h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> fecha</div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> user</div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> comentarios</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="button warning">Seguir leyendo</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#" class="button warning">Seguir leyendo</a>
-      </div>
-      <div class="large-4 columns text-center">
-        <img src="http://placehold.it/700x300">
-        <h2>Titulo</h2>
-        <div class="row">
-          <div class="large-4 columns">fecha</div>
-          <div class="large-4 columns">user</div>
-          <div class="large-4 columns">comentarios</div>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#" class="button warning">Seguir leyendo</a>
       </div>
     </div>
     <!-- footer -->

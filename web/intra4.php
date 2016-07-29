@@ -29,6 +29,49 @@
             <div class="callout secondary text-center">
               <h5>Proximos eventos</h5>
               <p>calendario de actividades</p>
+
+<p>Nombre pasajero:<br />
+[text nombre-pasajero] </p>
+
+<p>Celular:<br />
+[text celular] </p>
+
+<p>Rut:<br />
+[text rut] </p>
+
+<p>Vuelo ida:<br />
+[text vuelo-ida] </p>
+
+<p>Fecha:<br />
+[date fecha] </p>
+
+<p>Hora:<br />
+[text hora] </p>
+
+<p>Lugar de recogida:<br />
+[text recogida] </p>
+
+<p>Direccion de destino:<br />
+[text destino] </p>
+
+<p>Vuelo vuelta:<br />
+[text vuelta] </p>
+
+<p>Fecha regreso:<br />
+[date regreso] </p>
+
+<p>Hora:<br />
+[text hora-regreso] </p>
+
+<p>Lugar de recogida:<br />
+[text recogida2] </p>
+
+<p>Direccion de destino:<br />
+[text destino2] </p>
+
+<p>[submit "Enviar"]</p>
+
+
             </div>
           </div>
 

@@ -19,9 +19,6 @@
                 </div>
               </div>
             </div>
-            <div class="large-12 columns mapa">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.646445079888!2d-70.61302819087281!3d-33.49761715948321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d009320fce59%3A0x7300292c905d08eb!2sMIDE+UC!5e0!3m2!1ses!2scl!4v1462889485117" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
           </div>
           <!-- disclaimer -->
           <div class="expanded row disclaimer">
@@ -31,14 +28,13 @@
           <div class="container-fluid visible invisible2 show-for-large" id="formulario">
             <div class="row header-pestana">
               <div class="large-12 columns text-center">
-                <h5>Programas 2016</h5>
-                <h6>Inscríbete y te asesoraremos</h6>
+                <h5>Te asesoraremos</h5>
               </div>
             </div>
             <div class="row container-form">
               <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('formulario-lateral') ) : endif; ?>
             </div>
-            <div class="click"><span>Dejanos Tus datos</span></div>
+            <div class="click"><span>Contáctanos</span></div>
           </div>
 
         </div>
@@ -56,31 +52,23 @@
       $( ".click" ).click(function() {
         $( "#formulario" ).toggleClass( "invisible2" );
       });
-      $( "#panela" ).click(function() {
-        $( "#panel1" ).removeClass( "hide" );
-        $( "#panel2" ).addClass( "hide" );
-        $( "#panel3" ).addClass( "hide" );
-        $( "#panela" ).addClass( "active" );
-        $( "#panelb" ).removeClass( "active" );
-        $( "#panelc" ).removeClass( "active" );
+      $( "#panela" ).mouseover(function() {
+        $( "#panel1" ).removeClass( "esconder" );
+        $( "#panel2" ).addClass( "esconder" );
+        $( "#panel3" ).addClass( "esconder" );
       });
-      $( "#panelb" ).click(function() {
-        $( "#panel2" ).removeClass( "hide" );
-        $( "#panel1" ).addClass( "hide" );
-        $( "#panel3" ).addClass( "hide" );
-        $( "#panelb" ).addClass( "active" );
-        $( "#panela" ).removeClass( "active" );
-        $( "#panelc" ).removeClass( "active" );
+      $( "#panelb" ).mouseover(function() {
+        $( "#panel2" ).removeClass( "esconder" );
+        $( "#panel1" ).addClass( "esconder" );
+        $( "#panel3" ).addClass( "esconder" );
       });
-      $( "#panelc" ).click(function() {
-        $( "#panel3" ).removeClass( "hide" );
-        $( "#panel1" ).addClass( "hide" );
-        $( "#panel2" ).addClass( "hide" );
-        $( "#panelc" ).addClass( "active" );
-        $( "#panela" ).removeClass( "active" );
-        $( "#panelb" ).removeClass( "active" );
+      $( "#panelc" ).mouseover(function() {
+        $( "#panel3" ).removeClass( "esconder" );
+        $( "#panel1" ).addClass( "esconder" );
+        $( "#panel2" ).addClass( "esconder" );
       });
-    </script> 
+    </script>
+    <!-- worpress -->
     <?php wp_footer(); ?>
   </body>
 </html>

@@ -3,20 +3,7 @@
     Template Name: newsletter
     */
     ?>
-
-
-<?php get_header(); ?>
-
-<?php// query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-<?php// if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?>
-<?php// the_category(' '); ?>
-<?php// the_title(); ?>
-<?php// the_content(); ?>
-<?php// my_excerpt(10); ?>
-<?php// echo get_permalink(); ?>
-<?php// endwhile; wp_reset_query(); ?>
-
-
+    <?php get_header(); ?>
     <!-- contenido newsletter -->
     <div class="row contenido news">
       <div class="large-12 columns">
@@ -26,162 +13,41 @@
     <div class="row contenido news">
       <div class="large-6 columns">
         <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
+          <?php query_posts('category_name=newsletter' ); while ( have_posts() ) : the_post(); ?>
           <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
             <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
             <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
+            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'news' ); } ?></a>
+            <?php my_excerpt(35); ?>
           </div>
           <?php endwhile; wp_reset_query(); ?>
         </div>
       </div>
-      <div class="large-3 columns">
+      <div class="large-6 columns">
         <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
+          <?php query_posts('category_name=newsletter-lateral' ); while ( have_posts() ) : the_post(); ?>
+          <div class="large-6 columns">
             <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
             <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
+            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'news' ); } ?></a>
             <?php my_excerpt(20); ?>
           </div>
           <?php endwhile; wp_reset_query(); ?>
         </div>
       </div>
     </div>
-    <div class="row contenido news">
-      <div class="large-3 columns">
-        <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
+    <div class="row">
+      <div class="large-12 columns">
+        <h4>Archivo</h4>
+        <div class="menu">
+          <ul class="menu">
+            <li><a href="#">Enero</a></li>
+            <li><a href="#">Febrero</a></li>
+            <li><a href="#">Marzo</a></li>
+            <li><a href="#">Abril</a></li>
+          </ul>
         </div>
+        <hr>
       </div>
-      <div class="large-3 columns">
-        <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="row">
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-          <?php query_posts('category_name=productos&posts_per_page=1' ); while ( have_posts() ) : the_post(); ?>
-          <div class="large-12 columns">
-            <h6><?php the_category(' '); ?></h6>
-            <hr>
-            <h4><?php the_title(); ?></h4>
-            <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
-            <?php my_excerpt(20); ?>
-          </div>
-          <?php endwhile; wp_reset_query(); ?>
-        </div>
-      </div>
-    </div>
-    <div class="row contenido">
-      <hr>
     </div>
     <?php get_footer(); ?>

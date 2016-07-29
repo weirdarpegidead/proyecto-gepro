@@ -19,7 +19,7 @@
               
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('calendario') ) : endif; ?>
               
-              <div class="callout secondary">
+              <!--<div class="callout secondary">
                 <ul class="no-bullet lista">
                   <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
                   <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
@@ -32,54 +32,56 @@
                   <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
                   <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
                 </ul>
-              </div>
+              </div>-->
             </div>
             <div class="small-6 medium-9 large-9 columns">
-              <img src="http://placehold.it/1000x200">
+              <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/07/Collage.jpg" style="margin-bottom:1rem;">
               <div class="row">
                 <div class="large-8 columns">
                   <div class="orbit" role="region" data-orbit data-orbit>
                     <ul class="orbit-container">
                       <!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
                       <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
+                      <?php query_posts('category_name=noti-intra&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
                       <li class="orbit-slide text-center">
-                        <img src="http://placehold.it/700x500">
-                        <figcaption class="orbit-caption"><h3>Noticia desde el News Letter</h3></figcaption>
+                        <!--<img src="http://placehold.it/700x500">-->
+                        <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'single' ); } ?></a>
+                        <figcaption class="orbit-caption"><h3 style="color:white !important;"><?php the_title(); ?></h3></figcaption>
                       </li>
-                      <li class="orbit-slide text-center">
-                        <img src="http://placehold.it/700x500">
-                        <figcaption class="orbit-caption"><h3>Evento importante</h3></figcaption>
-                      </li>
-                      <li class="orbit-slide text-center">
-                        <img src="http://placehold.it/700x500">
-                        <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
-                      </li>
-                      <li class="orbit-slide text-center">
-                        <img src="http://placehold.it/700x500">
-                        <figcaption class="orbit-caption"><h3>Titulo del post</h3></figcaption>
-                      </li>
+                      <?php endwhile; wp_reset_query(); ?>
                     </ul>
-                    <nav class="orbit-bullets">
+                    <!--<nav class="orbit-bullets">
                       <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
                       <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
                       <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
                       <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-                    </nav>
+                    </nav>-->
                   </div>
                 </div>
                 <div class="large-4 columns boletin">
                   <div class="callout success">
                     <h6>Nuestra Gente</h6>
-                    <div class="row collapse">
-                      <div class="large-4 columns">
-                        <img src="http://placehold.it/100x100">
-                      </div>
-                      <div class="large-8 columns">
-                        <p><strong>Nombre: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p><strong>Cumpleaños: </strong>Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
+                    <div class="orbit" role="region" data-orbit data-orbit>
+                      <ul class="orbit-container">
+
+                        <?php query_posts('category_name=nuestra-gente&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
+
+                          <li class="orbit-slide">
+                            <div class="row">
+                              <div class="large-4 columns">
+                                <?php if ( has_post_thumbnail() ) { the_post_thumbnail(  ); } ?>
+                              </div>
+                              <div class="large-8 columns">
+                                <p><strong>Nombre: </strong><?php the_title(); ?></p>
+                                <p><strong>Cumpleaños: </strong><?php the_content(); ?></p>
+                              </div>
+                            </div>
+                          </li>
+
+                        <?php endwhile; wp_reset_query(); ?>
+                      </ul>
                     </div>
+
                   </div>
                 </div>
               </div>

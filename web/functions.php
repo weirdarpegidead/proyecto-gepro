@@ -5,6 +5,7 @@ add_image_size( 'homepage-thumb', 0, 0, true );
 add_image_size( 'testimonios', 200, 200, true);
 add_image_size( 'blog', 400, 400, true);
 add_image_size( 'single', 600, 600, true);
+add_image_size( 'news', 600, 200, true);
 /* === sacar barra de admin == */
 add_filter( 'show_admin_bar', '__return_false' );
 /* === menus === */
