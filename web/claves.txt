@@ -54,7 +54,23 @@ pass: yerbamatedam2392.506
 
 cpanel ilia
 url: https://gator3242.hostgator.com:2083/
-user: ilia
-SEO: +s^x0Te9~aN#
-Services: 3PyoI!]uHl0P
 
+SEO
+
+usuario: ilia
+pass: (rE9SxH=gA.L
+
+———————————————————————————————
+
+Services
+
+usuario: ab20067
+pass:  t.+Fae;H_;?-
+
+
+
+correo: kaHq9tH;-_&B
+
+
+user: prueba
+pass: 8wRkzgxDj$UlomUMnydVy8eg
