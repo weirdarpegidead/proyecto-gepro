@@ -75,6 +75,11 @@ register_sidebar(array(
  'after_widget' => '</div>',
  ));
 register_sidebar(array(
+ 'name' => 'mensaje-index',
+ 'before_widget' => '<h3>',
+ 'after_widget' => '</h3>',
+ ));
+register_sidebar(array(
  'name' => 'texto-footer',
  'before_widget' => '<div class="small-4 medium-4 large-4 small-offset-2 medium-offset-2 large-offset-2 columns">',
  'after_widget' => '</div>',

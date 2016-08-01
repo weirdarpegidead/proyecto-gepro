@@ -1,18 +1,18 @@
     <?php
     /*
-    Template Name: industrial
+    Template Name: salud
     */
     ?>
     <?php get_header(); ?>
-    <!-- contenido industria -->
+    <!-- contenido salud -->
     <div class="row sub-navegacion">
       <div class="large-12 columns">
         <div class="menu-centered">
           <ul class="menu">
             <li><a href="http://desarrollo.ilia.cl/gepro/mineria/">Minería</a></li>
-            <li class="current-menu-item"><a href="http://desarrollo.ilia.cl/gepro/industrial/">Industrial</a></li>
+            <li><a href="http://desarrollo.ilia.cl/gepro/industrial/">Industrial</a></li>
             <li><a href="http://desarrollo.ilia.cl/gepro/construccion/">Construcción</a></li>
-            <li><a href="http://desarrollo.ilia.cl/gepro/salud/">Salud</a></li>
+            <li class="current-menu-item"><a href="http://desarrollo.ilia.cl/gepro/salud/">Salud</a></li>
             <li><a href="http://desarrollo.ilia.cl/gepro/internacional/">Internacional</a></li>
             <li><a href="http://desarrollo.ilia.cl/gepro/ingenieria/">Ingeniería</a></li>
           </ul>
@@ -23,10 +23,8 @@
       <div class="medium-2 columns">
         <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
           <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Entrenamiento</a></li>
-          <li class="tabs-title"><a href="#panel2v">Proyectos Especiales</a></li>
-
-          <li class="tabs-title"><a href="#panel7v">Gestión de la Producción</a></li>
-
+          <li class="tabs-title"><a href="#panel4v">VDC-BIM</a></li>
+          <li class="tabs-title"><a href="#panel6v">Desarrollo Organizacional</a></li>
         </ul>
       </div>
       <div class="medium-10 columns">
@@ -37,7 +35,7 @@
                 <h4>Proyecto en Ejecución</h4>
                 
               </div>
-              <?php query_posts('category_name=ind-ent-act' ); while ( have_posts() ) : the_post(); ?>
+              <?php query_posts('category_name=sl-ent-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
                 <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'blog' ); } ?></a>
                 <h5><?php the_title(); ?></h5>
@@ -56,20 +54,20 @@
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
-                <?php query_posts('category_name=ind-ent-term' ); while ( have_posts() ) : the_post(); ?>
+                <?php query_posts('category_name=sl-ent-term' ); while ( have_posts() ) : the_post(); ?>
                   <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>                
                 <?php endwhile; wp_reset_query(); ?>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="tabs-panel" id="panel2v">
+          <div class="tabs-panel" id="panel4v">
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
                 
               </div>
-              <?php query_posts('category_name=ind-esp-act' ); while ( have_posts() ) : the_post(); ?>
+              <?php query_posts('category_name=sl-bim-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
                 <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'blog' ); } ?></a>
                 <h5><?php the_title(); ?></h5>
@@ -88,21 +86,20 @@
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
-                <?php query_posts('category_name=ind-esp-term' ); while ( have_posts() ) : the_post(); ?>
+                <?php query_posts('category_name=sl-bim-term' ); while ( have_posts() ) : the_post(); ?>
                   <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>                
                 <?php endwhile; wp_reset_query(); ?>
                 </ul>
               </div>
             </div>
           </div>
-          
-          <div class="tabs-panel" id="panel7v">
+          <div class="tabs-panel" id="panel6v">
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
                 
               </div>
-              <?php query_posts('category_name=ind-gest-prod-act' ); while ( have_posts() ) : the_post(); ?>
+              <?php query_posts('category_name=sl-des-org-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
                 <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'blog' ); } ?></a>
                 <h5><?php the_title(); ?></h5>
@@ -121,7 +118,7 @@
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
-                <?php query_posts('category_name=ind-gest-prod-term' ); while ( have_posts() ) : the_post(); ?>
+                <?php query_posts('category_name=sl-des-org-term' ); while ( have_posts() ) : the_post(); ?>
                   <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>                
                 <?php endwhile; wp_reset_query(); ?>
                 </ul>

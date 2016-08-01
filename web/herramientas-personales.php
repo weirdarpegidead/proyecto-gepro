@@ -19,17 +19,22 @@
               <ul class="dropdown menu" data-dropdown-menu>
                 <li><a href="<?php echo site_url(); ?>/herramientas-personales/solicitud-de-vacaciones/">Solicitud de Vacaciones</a></li>
                 <li><a href="<?php echo site_url(); ?>/herramientas-personales/dias-administrativos/">Solicitud de dias Administrativos</a></li>
-                <li><a href="<?php echo site_url(); ?>/herramientas-personales/remuneraciones/">Liquidaciones de Sueldo</a></li>
+                <!--<li><a href="<?php echo site_url(); ?>/herramientas-personales/remuneraciones/">Liquidaciones de Sueldo</a></li>-->
                 <li><a href="#">Beneficios</a>
                   <ul class="menu">
-                    <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Poliza-275.210-3-Salud.pdf" target="_blank">Euroamérica - Poliza Salud</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Póliza-275.209-5-Catastrófico.pdf" target="_blank">Euroamérica - Poliza Catastrófico</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Seguro-euroamerica-DENTAL.pdf" target="_blank">Seguro Euroamérica Dental</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Reembolso-Médico-Euroamérica.pdf" target="_blank">Reembolso Médico Euroamérica</a></li>
-                    <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Beneficios-Gepro-Euroamérica.pdf" target="_blank">Beneficios Gepro-Euroamérica</a></li>
+                    <li><a href="#">Caja de Compensación</a></li>
+                    <li><a href="#">EuroAmerica</a>
+                      <ul class="menu">
+                        <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Poliza-275.210-3-Salud.pdf" target="_blank">Euroamérica - Poliza Salud</a></li>
+                        <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Póliza-275.209-5-Catastrófico.pdf" target="_blank">Euroamérica - Poliza Catastrófico</a></li>
+                        <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Seguro-euroamerica-DENTAL.pdf" target="_blank">Seguro Euroamérica Dental</a></li>
+                        <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Reembolso-Médico-Euroamérica.pdf" target="_blank">Reembolso Médico Euroamérica</a></li>
+                        <li><a href="http://desarrollo.ilia.cl/gepro/wp-content/uploads/2016/07/Beneficios-Gepro-Euroamérica.pdf" target="_blank">Beneficios Gepro-Euroamérica</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
-                <li><a href="<?php echo site_url(); ?>/herramientas-personales/HH">HH</a></li>
+                <li><a href="http://www.gepro.cl/sisgepro">HH</a></li>
               </ul>
             </div>
 

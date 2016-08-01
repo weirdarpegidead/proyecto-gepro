@@ -16,26 +16,10 @@
               )); ?>
             </div>
             <div class="small-6 medium-3 large-3 columns calendario">
-              
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('calendario') ) : endif; ?>
-              
-              <!--<div class="callout secondary">
-                <ul class="no-bullet lista">
-                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento un poco mas largo de lo normal.</strong></li>
-                  <li><span>10 - 4</span><strong>Resumen del evento.</strong></li>
-                </ul>
-              </div>-->
+              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('calendario') ) : endif; ?>
             </div>
             <div class="small-6 medium-9 large-9 columns">
-              <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/07/Collage.jpg" style="margin-bottom:1rem;">
+              <img src="<?php echo site_url(); ?>/wp-content/uploads/2016/08/Collage-1.jpg" style="margin-bottom:1rem;">
               <div class="row">
                 <div class="large-8 columns">
                   <div class="orbit" role="region" data-orbit data-orbit>
@@ -50,12 +34,6 @@
                       </li>
                       <?php endwhile; wp_reset_query(); ?>
                     </ul>
-                    <!--<nav class="orbit-bullets">
-                      <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                      <button data-slide="2"><span class="show-for-sr">Second slide details.</span></button>
-                      <button data-slide="3"><span class="show-for-sr">Second slide details.</span></button>
-                    </nav>-->
                   </div>
                 </div>
                 <div class="large-4 columns boletin">
@@ -63,9 +41,7 @@
                     <h6>Nuestra Gente</h6>
                     <div class="orbit" role="region" data-orbit data-orbit>
                       <ul class="orbit-container">
-
                         <?php query_posts('category_name=nuestra-gente&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
-
                           <li class="orbit-slide">
                             <div class="row">
                               <div class="large-4 columns">
@@ -73,15 +49,33 @@
                               </div>
                               <div class="large-8 columns">
                                 <p><strong>Nombre: </strong><?php the_title(); ?></p>
-                                <p><strong>Cumpleaños: </strong><?php the_content(); ?></p>
+                                <?php the_content(); ?>
                               </div>
                             </div>
                           </li>
-
                         <?php endwhile; wp_reset_query(); ?>
                       </ul>
                     </div>
-
+                  </div>
+                  <div class="callout success">
+                    <h6>Nuestra Gente</h6>
+                    <div class="orbit" role="region" data-orbit data-orbit>
+                      <ul class="orbit-container">
+                        <?php query_posts('category_name=cumple&posts_per_page=4' ); while ( have_posts() ) : the_post(); ?>
+                          <li class="orbit-slide">
+                            <div class="row">
+                              <div class="large-4 columns">
+                                <?php if ( has_post_thumbnail() ) { the_post_thumbnail(  ); } ?>
+                              </div>
+                              <div class="large-8 columns">
+                                <p><strong>Nombre: </strong><?php the_title(); ?></p>
+                                <?php the_content(); ?>
+                              </div>
+                            </div>
+                          </li>
+                        <?php endwhile; wp_reset_query(); ?>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

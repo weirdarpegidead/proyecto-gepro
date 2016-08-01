@@ -7,11 +7,9 @@
                 </div>
                 <div class="large-6 columns">
                   <ul class="menu social align-right">
-                    <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="fi-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="fi-social-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/geproasesorias/?ref=ts&fref=ts"><i class="fi-social-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/geproasesorias?trk=biz-companies-cym"><i class="fi-social-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/geproasesorias"><i class="fi-social-twitter"></i></a></li>
                   </ul>
                   <ul class="menu contacto align-right">
                     <li><a href="tel://+56223547050"><i class="fi-telephone"></i>Telefono: (+56 2) 2354 7050</a></li>
