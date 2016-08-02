@@ -117,7 +117,15 @@
               <?php endwhile; wp_reset_query(); ?>
               <div class="large-12 columns">
                 <h4>Proyectos ejecutados</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">

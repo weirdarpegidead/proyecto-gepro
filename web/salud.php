@@ -33,7 +33,15 @@
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <?php query_posts('category_name=sl-ent-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
@@ -50,7 +58,15 @@
               <?php endwhile; wp_reset_query(); ?>
               <div class="large-12 columns">
                 <h4>Proyectos ejecutados</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
@@ -65,7 +81,15 @@
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <?php query_posts('category_name=sl-bim-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
@@ -82,7 +106,15 @@
               <?php endwhile; wp_reset_query(); ?>
               <div class="large-12 columns">
                 <h4>Proyectos ejecutados</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
@@ -97,7 +129,15 @@
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <?php query_posts('category_name=sl-des-org-act' ); while ( have_posts() ) : the_post(); ?>
               <div class="large-4 columns text-center mascara">
@@ -114,7 +154,15 @@
               <?php endwhile; wp_reset_query(); ?>
               <div class="large-12 columns">
                 <h4>Proyectos ejecutados</h4>
+<<<<<<< Updated upstream
                 
+=======
+<<<<<<< HEAD
+                <hr>
+=======
+                
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">

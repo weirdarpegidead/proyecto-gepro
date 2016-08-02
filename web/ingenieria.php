@@ -85,7 +85,12 @@
               <?php endwhile; wp_reset_query(); ?>
               <div class="large-12 columns">
                 <h4>Proyectos ejecutados</h4>
+<<<<<<< Updated upstream
                 
+              </div>
+=======
+<<<<<<< HEAD
+                <hr>
               </div>
               <div class="large-12 columns">
                 <ul class="no-bullet">
@@ -94,6 +99,21 @@
                 <?php endwhile; wp_reset_query(); ?>
                 </ul>
               </div>
+=======
+                
+              </div>
+>>>>>>> Stashed changes
+              <div class="large-12 columns">
+                <ul class="no-bullet">
+                <?php query_posts('category_name=ing-esp-term' ); while ( have_posts() ) : the_post(); ?>
+                  <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>                
+                <?php endwhile; wp_reset_query(); ?>
+                </ul>
+              </div>
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               
             </div>
           </div>
@@ -102,6 +122,49 @@
             <div class="row contenido">
               <div class="large-12 columns">
                 <h4>Proyecto en Ejecución</h4>
+<<<<<<< Updated upstream
+                
+=======
+<<<<<<< HEAD
+                <hr>
+>>>>>>> Stashed changes
+              </div>
+              <?php query_posts('category_name=ing-bim-act' ); while ( have_posts() ) : the_post(); ?>
+              <div class="large-4 columns text-center mascara">
+                <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'blog' ); } ?></a>
+                <h5><?php the_title(); ?></h5>
+                <div class="row">
+                  <div class="large-4 columns meta"><i class="fi-calendar"></i> <?php the_time('F j, Y') ?></div>
+                  <div class="large-4 columns meta"><i class="fi-torsos"></i> <?php the_author() ?></div>
+                  <div class="large-4 columns meta"><i class="fi-comments"></i> <?php comments_number( '0 Comentarios', 'Un comentario', '% Comentarios' ); ?>.</div>
+                </div>
+                <?php my_excerpt(30); ?>
+                <a href="<?php echo get_permalink(); ?>" class="button warning">Seguir leyendo</a>
+              </div>
+              <?php endwhile; wp_reset_query(); ?>
+<<<<<<< Updated upstream
+              <div class="large-12 columns">
+                <h4>Proyectos ejecutados</h4>
+                
+              </div>
+              <div class="large-12 columns">
+=======
+              <div class="large-12 columns">
+                <h4>Proyectos ejecutados</h4>
+                <hr>
+              </div>
+              <div class="large-12 columns">
+>>>>>>> Stashed changes
+                <ul class="no-bullet">
+                <?php query_posts('category_name=ing-bim-term' ); while ( have_posts() ) : the_post(); ?>
+                  <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>                
+                <?php endwhile; wp_reset_query(); ?>
+                </ul>
+<<<<<<< Updated upstream
+              </div>
+=======
+              </div>
+=======
                 
               </div>
               <?php query_posts('category_name=ing-bim-act' ); while ( have_posts() ) : the_post(); ?>
@@ -128,6 +191,8 @@
                 <?php endwhile; wp_reset_query(); ?>
                 </ul>
               </div>
+>>>>>>> origin/master
+>>>>>>> Stashed changes
               
             </div>
           </div>
